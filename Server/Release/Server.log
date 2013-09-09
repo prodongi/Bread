@@ -1,0 +1,14 @@
+﻿Build started 2012-08-16 오전 1:27:56.
+     1>Project "D:\Work\Bread\Server\Server.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\Server.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\Server.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       FinalizeBuildStatus:
+         Deleting file "Release\Server.unsuccessfulbuild".
+         Touching "Release\Server.lastbuildstate".
+     1>Done Building Project "D:\Work\Bread\Server\Server.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.39

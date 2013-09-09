@@ -1,0 +1,14 @@
+[material]
+name models/monsters/cherub/teeth
+shader base
+[end]
+[material]
+name models/monsters/vagary/sac
+shader base
+shader bump
+[end]
+[material]
+name models/monsters/vagary/vagary
+shader base
+shader bump
+[end]

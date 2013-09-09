@@ -1,0 +1,11 @@
+1. Visual studio new project
+ - uncheck Create directory for solution
+2. 파일 복사
+ - Engine, Main 폴더 복사
+3. 파일 비교
+ - stdafx.h
+   프로젝트명.cpp
+   *.vcxproj(프로젝트명은 바꾸면 안됨)
+   *.vcxproj.user
+   
+    

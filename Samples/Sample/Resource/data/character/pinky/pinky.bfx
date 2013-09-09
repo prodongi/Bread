@@ -1,0 +1,20 @@
+[material]
+name 01 - Default
+shader base
+[end]
+[material]
+name 03 - Default
+shader base
+[end]
+[material]
+name 04 - Default
+shader base
+[end]
+[material]
+name models/monsters/pinky/film
+shader base
+[end]
+[material]
+name models/monsters/pinky/pinky_metal
+shader base
+[end]

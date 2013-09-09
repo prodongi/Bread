@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F4F11A2-E158-4496-BF02-E83B0D6734D9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TreasureBag</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>Static</UseOfAtl>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)D</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_HAS_ITERATOR_DEBUGGING#0;_SECURE_SCL#0;_PROFILE_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\BDK\Include;..\..\..\Client\Core\Include;..\..\..\Client\GUI\Include;..\..\..\Client\Renderer\Include;..\..\..\Tool\D3DSDK\Include;..\..\..\Tool\Boost\boost-1_44;..\..\..\Tool\BugSlayerUtil\include;..\..\..\Tool\freetype-2.3.5-1\include;..\..\..\Tool\vld-10;..\..\..\Tool\loki-0.1.7\include;Engine\Core\Include;Engine\Renderer\Include;Main;Game;Game\GameState;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4099;4996;4819;4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>\Main;..\..\..\Lib;..\..\..\Tool\D3DSDK\Lib\x86;..\..\..\Tool\Boost\lib;..\..\..\Tool\UnitTest++\Lib;..\..\..\Tool\xmllib;..\..\..\Tool\freetype-2.3.5-1\lib;..\..\..\Tool\vld-10;..\..\..\Tool\loki-0.1.7\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9d.lib;dxerr9.lib;dxguid.lib;dinput8.lib;BreadBDKD.lib;BreadClientD.lib;tinyxmld.lib;lua51_Debug(MDd).lib;version.lib;freetype.lib;imm32.lib;loki_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\Output 
+copy $(OutDir)$(TargetName)$(TargetExt) ..\Resource</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_PROFILE_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\BDK\Include;..\..\..\Client\Core\Include;..\..\..\Client\GUI\Include;..\..\..\Client\Renderer\Include;..\..\..\Tool\D3DSDK\Include;..\..\..\Tool\Boost\boost-1_44;..\..\..\Tool\BugSlayerUtil\include;..\..\..\Tool\freetype-2.3.5-1\include;..\..\..\Tool\vld-10;..\..\..\Tool\loki-0.1.7\include;Engine\Core\Include;Engine\Renderer\Include;Main;Game;Game\GameState;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4099;4996;4819;4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>\Main;..\..\..\Lib;..\..\..\Tool\D3DSDK\Lib\x86;..\..\..\Tool\Boost\lib;..\..\..\Tool\UnitTest++\Lib;..\..\..\Tool\xmllib;..\..\..\Tool\freetype-2.3.5-1\lib;..\..\..\Tool\vld-10;..\..\..\Tool\loki-0.1.7\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr9.lib;dxguid.lib;dinput8.lib;BreadBDK.lib;BreadClient.lib;tinyxml.lib;lua51_Release(MD).lib;version.lib;freetype.lib;imm32.lib;loki.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\Output </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico" />
+    <None Include="TreasureBag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Core\Include\CustomClassCreater.h" />
+    <ClInclude Include="Engine\Core\Include\CustomLuaManager.h" />
+    <ClInclude Include="Engine\Core\Include\CustomMsgManager.h" />
+    <ClInclude Include="Engine\Core\Include\MsgCallBack.h" />
+    <ClInclude Include="Engine\Core\Include\MsgInfoList.h" />
+    <ClInclude Include="Engine\Core\Include\MsgType.h" />
+    <ClInclude Include="Engine\Renderer\Include\AnimationDamage.h" />
+    <ClInclude Include="Engine\Renderer\Include\CustomAnimationActionEnum.h" />
+    <ClInclude Include="Engine\Renderer\Include\CustomAnimationActionManager.h" />
+    <ClInclude Include="Engine\Renderer\Include\CustomEntityManager.h" />
+    <ClInclude Include="Game\Game.h" />
+    <ClInclude Include="Game\GameState\GameStateManager.h" />
+    <ClInclude Include="Game\GameState\LoadingState.h" />
+    <ClInclude Include="Game\GameState\LoginState.h" />
+    <ClInclude Include="Game\GameState\PlayState.h" />
+    <ClInclude Include="Main\Definition.h" />
+    <ClInclude Include="Main\TreasureApp.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TreasureBag.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\Core\Source\CustomClassCreater.cpp" />
+    <ClCompile Include="Engine\Core\Source\CustomLuaManager.cpp" />
+    <ClCompile Include="Engine\Core\Source\CustomMsgManager.cpp" />
+    <ClCompile Include="Engine\Core\Source\MsgCallBack.cpp" />
+    <ClCompile Include="Engine\Renderer\Source\AnimationDamager.cpp" />
+    <ClCompile Include="Engine\Renderer\Source\CustomAnimationActionManager.cpp" />
+    <ClCompile Include="Engine\Renderer\Source\CustomEntityManager.cpp" />
+    <ClCompile Include="Game\Game.cpp" />
+    <ClCompile Include="Game\GameState\GameStateManager.cpp" />
+    <ClCompile Include="Game\GameState\LoadingState.cpp" />
+    <ClCompile Include="Game\GameState\LoginState.cpp" />
+    <ClCompile Include="Game\GameState\PlayState.cpp" />
+    <ClCompile Include="Main\TreasureApp.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TreasureBag.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TreasureBag.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

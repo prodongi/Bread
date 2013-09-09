@@ -1,0 +1,32 @@
+[material]
+name 01 - Default
+shader base
+[end]
+[material]
+name 02 - Default
+shader base
+[end]
+[material]
+name 03 - Default
+shader base
+[end]
+[material]
+name 04 - Default
+shader base
+[end]
+[material]
+name models/characters/common/leftzsarge
+shader base
+[end]
+[material]
+name models/characters/common/rightzsarge
+shader base
+[end]
+[material]
+name models/characters/common/teethsarge
+shader base
+[end]
+[material]
+name models/weapons/bfg/bfg_world
+shader base
+[end]

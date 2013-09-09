@@ -1,0 +1,5 @@
+[material]
+name 01 - Default
+shader base
+shader gpu_ani
+[end]

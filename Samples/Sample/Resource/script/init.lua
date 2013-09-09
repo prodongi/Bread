@@ -1,0 +1,2 @@
+
+glueDoFile("script/initAnimation.lua")

@@ -1,0 +1,8 @@
+[material]
+name 01 - Default
+shader base
+[end]
+[material]
+name 02 - Default
+shader base
+[end]

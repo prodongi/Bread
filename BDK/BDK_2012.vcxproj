@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_DX11|Win32">
+      <Configuration>Debug_DX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DX11|Win32">
+      <Configuration>Release_DX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B5F0CD4-2CA8-46F6-82A3-5BD5AAE45FD7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BDK</RootNamespace>
+    <ProjectName>BDK</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>BreadBDKD</TargetName>
+    <OutDir>$(SolutionDir)\Out\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">
+    <TargetName>BreadBDKD</TargetName>
+    <OutDir>$(SolutionDir)\Out\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>BreadBDK</TargetName>
+    <OutDir>$(SolutionDir)\Out\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">
+    <TargetName>BreadBDK</TargetName>
+    <OutDir>$(SolutionDir)\Out\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_HAS_ITERATOR_DEBUGGING#0;_SECURE_SCL#0;_PROFILE_;_D3D9_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4127;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/Ylsymbol %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) ..\Lib\$(TargetFileName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_HAS_ITERATOR_DEBUGGING#0;_SECURE_SCL#0;_PROFILE_;_D3D11_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4127;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/Ylsymbol %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) ..\Lib\$(TargetFileName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_SECURE_SCL#0;_PROFILE_;_D3D9_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4127;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) ..\Lib\$(TargetFileName)</Command>
+    </PostBuildEvent>
+    <Lib>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_SECURE_SCL#0;_PROFILE_;_D3D11_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <AdditionalIncludeDirectories>Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4127;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) ..\Lib\$(TargetFileName)</Command>
+    </PostBuildEvent>
+    <Lib>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\BreadAABB.h" />
+    <ClInclude Include="Include\BreadBaseState.h" />
+    <ClInclude Include="Include\BreadBoostNormalPool.h" />
+    <ClInclude Include="Include\BreadBoostObjectPool.h" />
+    <ClInclude Include="Include\BreadBoostSingletonPool.h" />
+    <ClInclude Include="Include\BreadBounding.h" />
+    <ClInclude Include="Include\BreadBoundingSphere.h" />
+    <ClInclude Include="Include\BreadBucketHash.h" />
+    <ClInclude Include="Include\BreadBucketMap.h" />
+    <ClInclude Include="Include\BreadBucketVector.h" />
+    <ClInclude Include="Include\BreadCachePool.h" />
+    <ClInclude Include="Include\BreadCollisionHelper.h" />
+    <ClInclude Include="Include\BreadCpuInfo.h" />
+    <ClInclude Include="Include\BreadCriticalSection.h" />
+    <ClInclude Include="Include\BreadDataFactory.h" />
+    <ClInclude Include="Include\BreadDefinition.h" />
+    <ClInclude Include="Include\BreadDeletingThread.h" />
+    <ClInclude Include="Include\BreadDirectoryInfo.h" />
+    <ClInclude Include="Include\BreadDtwinver.h" />
+    <ClInclude Include="Include\BreadFile.h" />
+    <ClInclude Include="Include\BreadFileHelper.h" />
+    <ClInclude Include="Include\BreadHashFunctions.h" />
+    <ClInclude Include="Include\BreadHelperClass.h" />
+    <ClInclude Include="Include\BreadInline.h" />
+    <ClInclude Include="Include\BreadInternString.h" />
+    <ClInclude Include="Include\BreadInterpolation.h" />
+    <ClInclude Include="Include\BreadLine.h" />
+    <ClInclude Include="Include\BreadLoadingThread.h" />
+    <ClInclude Include="Include\BreadLuaManagerBase.h" />
+    <ClInclude Include="Include\BreadLuaTable.h" />
+    <ClInclude Include="Include\BreadMath.h" />
+    <ClInclude Include="Include\BreadMatrix3.h" />
+    <ClInclude Include="Include\BreadMatrix4.h" />
+    <ClInclude Include="Include\BreadMemoryLeakHeader.h" />
+    <ClInclude Include="Include\BreadMsgInfo.h" />
+    <ClInclude Include="Include\BreadMsgManagerBase.h" />
+    <ClInclude Include="Include\BreadNormalFile.h" />
+    <ClInclude Include="Include\BreadOBB.h" />
+    <ClInclude Include="Include\BreadObjectFactory.h" />
+    <ClInclude Include="Include\BreadPackedFile.h" />
+    <ClInclude Include="Include\BreadPlane.h" />
+    <ClInclude Include="Include\BreadProfile.h" />
+    <ClInclude Include="Include\BreadProfileManager.h" />
+    <ClInclude Include="Include\BreadQuaternion.h" />
+    <ClInclude Include="Include\BreadRand.h" />
+    <ClInclude Include="Include\BreadRay.h" />
+    <ClInclude Include="Include\BreadRect2.h" />
+    <ClInclude Include="Include\BreadRTTI.h" />
+    <ClInclude Include="Include\BreadScheduler.h" />
+    <ClInclude Include="Include\BreadSingleton.h" />
+    <ClInclude Include="Include\BreadSkelCode.h" />
+    <ClInclude Include="Include\BreadSSEMatrix4.h" />
+    <ClInclude Include="Include\BreadSSEVector4.h" />
+    <ClInclude Include="Include\BreadStateManager.h" />
+    <ClInclude Include="Include\BreadStdHeader.h" />
+    <ClInclude Include="Include\BreadStringHelper.h" />
+    <ClInclude Include="Include\BreadSystemInfo.h" />
+    <ClInclude Include="Include\BreadThreadBase.h" />
+    <ClInclude Include="Include\BreadTimer.h" />
+    <ClInclude Include="Include\BreadTrace.h" />
+    <ClInclude Include="Include\BreadUtils.h" />
+    <ClInclude Include="Include\BreadUUIDManager.h" />
+    <ClInclude Include="Include\BreadVector2.h" />
+    <ClInclude Include="Include\BreadVector3.h" />
+    <ClInclude Include="Include\BreadVector4.h" />
+    <ClInclude Include="Include\FreeList.h" />
+    <ClInclude Include="Include\FreeListPolicies.h" />
+    <ClInclude Include="Include\lauxlib.h" />
+    <ClInclude Include="Include\lua.h" />
+    <ClInclude Include="Include\luaconf.h" />
+    <ClInclude Include="Include\lualib.h" />
+    <ClInclude Include="Include\lua_tinker.h" />
+    <ClInclude Include="Include\MersenneTwister.h" />
+    <ClInclude Include="Include\Perlin.h" />
+    <ClInclude Include="Include\XlsData.h" />
+    <ClInclude Include="Include\XlsDataSet.h" />
+    <ClInclude Include="Include\XlsManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\BreadAABB.cpp" />
+    <ClCompile Include="Source\BreadBounding.cpp" />
+    <ClCompile Include="Source\BreadBoundingSphere.cpp" />
+    <ClCompile Include="Source\BreadCachePool.cpp" />
+    <ClCompile Include="Source\BreadCollisionHelper.cpp" />
+    <ClCompile Include="Source\BreadCpuInfo.cpp" />
+    <ClCompile Include="Source\BreadCriticalSection.cpp" />
+    <ClCompile Include="Source\BreadDeletingThread.cpp" />
+    <ClCompile Include="Source\BreadDirectoryInfo.cpp" />
+    <ClCompile Include="Source\BreadDtwinver.cpp" />
+    <ClCompile Include="Source\BreadFile.cpp" />
+    <ClCompile Include="Source\BreadFileHelper.cpp" />
+    <ClCompile Include="Source\BreadHashFunctions.cpp" />
+    <ClCompile Include="Source\BreadInternString.cpp" />
+    <ClCompile Include="Source\BreadInterpolation.cpp" />
+    <ClCompile Include="Source\BreadLoadingThread.cpp" />
+    <ClCompile Include="Source\BreadLuaManagerBase.cpp" />
+    <ClCompile Include="Source\BreadMath.cpp" />
+    <ClCompile Include="Source\BreadMatrix3.cpp" />
+    <ClCompile Include="Source\BreadMatrix4.cpp" />
+    <ClCompile Include="Source\BreadMemoryLeakHeader.cpp" />
+    <ClCompile Include="Source\BreadMsgManagerBase.cpp" />
+    <ClCompile Include="Source\BreadNormalFile.cpp" />
+    <ClCompile Include="Source\BreadOBB.cpp" />
+    <ClCompile Include="Source\BreadPackedFile.cpp" />
+    <ClCompile Include="Source\BreadProfile.cpp" />
+    <ClCompile Include="Source\BreadProfileManager.cpp" />
+    <ClCompile Include="Source\BreadQuaternion.cpp" />
+    <ClCompile Include="Source\BreadRand.cpp" />
+    <ClCompile Include="Source\BreadRay.cpp" />
+    <ClCompile Include="Source\BreadRect2.cpp" />
+    <ClCompile Include="Source\BreadScheduler.cpp" />
+    <ClCompile Include="Source\BreadSSEMatrix4.cpp" />
+    <ClCompile Include="Source\BreadSSEVector4.cpp" />
+    <ClCompile Include="Source\BreadStateManager.cpp" />
+    <ClCompile Include="Source\BreadStringHelper.cpp" />
+    <ClCompile Include="Source\BreadSystemInfo.cpp" />
+    <ClCompile Include="Source\BreadTimer.cpp" />
+    <ClCompile Include="Source\BreadTrace.cpp" />
+    <ClCompile Include="Source\BreadUtils.cpp" />
+    <ClCompile Include="Source\BreadUUIDManager.cpp" />
+    <ClCompile Include="Source\BreadVector2.cpp" />
+    <ClCompile Include="Source\BreadVector3.cpp" />
+    <ClCompile Include="Source\FreeListPolicies.cpp" />
+    <ClCompile Include="Source\lua_tinker.cpp" />
+    <ClCompile Include="Source\XlsData.cpp" />
+    <ClCompile Include="Source\XlsDataSet.cpp" />
+    <ClCompile Include="Source\XlsManager.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

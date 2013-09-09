@@ -1,0 +1,15 @@
+﻿Build started 2012-08-16 오후 11:23:49.
+     1>Project "D:\Work\Bread\Server\Server.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\Server.unsuccessfulbuild".
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\lan\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Work\Bread\Debug\Server.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Server.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Work\Bread\Debug\Server.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Work\Bread\Debug\Server.lib" /MACHINE:X86 /DLL Debug\Server.dll.embed.manifest.res
+     1>LINK : error LNK2001: unresolved external symbol __DllMainCRTStartup@12
+     1>D:\Work\Bread\Debug\Server.dll : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "D:\Work\Bread\Server\Server.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:05.18

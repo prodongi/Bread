@@ -1,0 +1,13 @@
+[material]
+name models/monsters/hellknight/gob
+shader base
+shader bump
+[end]
+[material]
+name models/monsters/hellknight/gob2
+shader base
+[end]
+[material]
+name models/monsters/hellknight/tongue
+shader base
+[end]

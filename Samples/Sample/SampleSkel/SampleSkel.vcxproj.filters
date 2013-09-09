@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{2fc9f875-b7d9-48bb-b28f-1fe075a2c5cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core">
+      <UniqueIdentifier>{99dc4e67-fd8d-4198-8706-4dab1189a700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Renderer">
+      <UniqueIdentifier>{148646e8-858a-44ac-bcc3-ffa8f9bd7da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{799e8449-0d75-4a13-b194-f10134d8d06f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Script">
+      <UniqueIdentifier>{84a0a398-e387-4543-a91c-eb9ec0ada954}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Core">
+      <UniqueIdentifier>{c6a337dd-181b-4336-894b-751abfc9cfaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root">
+      <UniqueIdentifier>{5433ad70-06d1-41fc-9969-3f7ae4302ae9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SampleSkel.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main\SampleApp.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Test.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Include\CustomClassCreater.h">
+      <Filter>Engine\Core\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleSkel.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main\SampleApp.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Test.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Source\CustomClassCreater.cpp">
+      <Filter>Engine\Core\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleSkel.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SampleSkel.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

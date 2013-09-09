@@ -1,0 +1,18 @@
+[material]
+name Bones___Vray01
+shader base
+shader gpu_ani
+shader specular
+[end]
+[material]
+name Brown___Vray01
+shader base
+shader gpu_ani
+shader specular
+[end]
+[material]
+name White___Vray01
+shader base
+shader gpu_ani
+shader specular
+[end]

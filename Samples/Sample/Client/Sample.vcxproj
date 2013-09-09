@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_DX11|Win32">
+      <Configuration>Debug_DX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DX11|Win32">
+      <Configuration>Release_DX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E1F26767-BD10-419F-9DBC-FCB4588A860C}</ProjectGuid>
+    <RootNamespace>Sample</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Output\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">..\Output\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Output\Release\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">..\Output\Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Output\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">..\Output\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Output\Debug\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">..\Output\Debug\</IntDir>
+    <ReferencePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Work\Bread\Lib;$(ReferencePath)</ReferencePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\BDK\Include;..\..\..\Client\Core\Include;..\..\..\Client\Game\Include;..\..\..\Client\GUI\Include;..\..\..\Client\Renderer\Include;..\..\..\Tool\D3DSDK\Include;..\..\..\Tool\Boost\boost-1_44;..\..\..\Tool\BugSlayerUtil\include;..\..\..\Tool\freetype-2.3.5-1\include;..\..\..\Tool\vld-10;..\..\..\Tool\loki-0.1.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_HAS_ITERATOR_DEBUGGING#0;_SECURE_SCL#0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4099;4996;4819;4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/verbose:lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9d.lib;dxerr9.lib;dxguid.lib;dinput8.lib;BreadBDKD.lib;BreadClientD.lib;tinyxmld.lib;lua51_Debug(MDd).lib;version.lib;freetype.lib;imm32.lib;loki_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>\Include;..\..\..\Lib;..\..\..\Tool\D3DSDK\Lib\x86;..\..\..\Tool\Boost\lib;..\..\..\Tool\UnitTest++\Lib;..\..\..\Tool\xmllib;..\..\..\Tool\freetype-2.3.5-1\lib;..\..\..\Tool\vld-10;..\..\..\Tool\loki-0.1.7\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\Resource\SampleD.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>false</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Core\Include;..\..\..\GUI\Include;..\..\..\Renderer\Include;..\..\..\Tool\D3DSDK\Include;..\..\..\Tool\Boost\boost-1_44;..\..\..\Tool\BugSlayerUtil\include;..\..\..\Tool\freetype-2.3.5-1\include;..\..\..\Tool\vld-10;..\..\..\Tool\loki-0.1.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_HAS_ITERATOR_DEBUGGING#0;_SECURE_SCL#0;_DX11;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4099;4996;4819;4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/verbose:lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9d.lib;dxerr9.lib;dxguid.lib;dinput8.lib;BreadGuiD11.lib;BreadRendererD11.lib;BreadCoreD11.lib;tinyxmld.lib;lua51_Debug(MDd).lib;version.lib;freetype.lib;imm32.lib;loki_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>\Include;..\..\..\Lib;..\..\..\Tool\D3DSDK\Lib\x86;..\..\..\Tool\Boost\lib;..\..\..\Tool\UnitTest++\Lib;..\..\..\Tool\xmllib;..\..\..\Tool\freetype-2.3.5-1\lib;..\..\..\Tool\vld-10;..\..\..\Tool\loki-0.1.7\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\Resource\SampleD.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>false</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\BDK\Include;..\..\..\Client\Core\Include;..\..\..\Client\Game\Include;..\..\..\Client\GUI\Include;..\..\..\Client\Renderer\Include;..\..\..\Tool\D3DSDK\Include;..\..\..\Tool\Boost\boost-1_44;..\..\..\Tool\BugSlayerUtil\include;..\..\..\Tool\freetype-2.3.5-1\include;..\..\..\Tool\vld-10;..\..\..\Tool\loki-0.1.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4099;4996;4819;4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/verbose:lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr9.lib;dxguid.lib;dinput8.lib;BreadBDK.lib;BreadClient.lib;tinyxml.lib;lua51_Release(MD).lib;version.lib;freetype.lib;imm32.lib;loki.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>\Include;..\..\..\Lib;..\..\..\Tool\D3DSDK\Lib\x86;..\..\..\Tool\Boost\lib;..\..\..\Tool\UnitTest++\Lib;..\..\..\Tool\xmllib;..\..\..\Tool\freetype-2.3.5-1\lib;..\..\..\Tool\vld-10;..\..\..\Tool\loki-0.1.7\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;atlsd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\Resource\Sample.pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>
+      </StripPrivateSymbols>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>false</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Core\Include;..\..\..\GUI\Include;..\..\..\Renderer\Include;..\..\..\Tool\D3DSDK\Include;..\..\..\Tool\Boost\boost-1_44;..\..\..\Tool\BugSlayerUtil\include;..\..\..\Tool\freetype-2.3.5-1\include;..\..\..\Tool\loki-0.1.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_DX11;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4099;4996;4819;4127;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/verbose:lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr9.lib;dxguid.lib;dinput8.lib;BreadGui11.lib;BreadRenderer11.lib;BreadCore11.lib;tinyxml.lib;lua51_Release(MD).lib;version.lib;freetype.lib;imm32.lib;loki.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>\Include;..\..\..\Lib;..\..\..\Tool\D3DSDK\Lib\x86;..\..\..\Tool\Boost\lib;..\..\..\Tool\UnitTest++\Lib;..\..\..\Tool\xmllib;..\..\..\Tool\freetype-2.3.5-1\lib;..\..\..\Tool\loki-0.1.7\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libc.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>..\Resource\Sample.pdb</ProgramDatabaseFile>
+      <StripPrivateSymbols>
+      </StripPrivateSymbols>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>false</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CustomClassCreater.cpp" />
+    <ClCompile Include="Sample.cpp" />
+    <ClCompile Include="SampleApp.cpp" />
+    <ClCompile Include="SampleConsole.cpp" />
+    <ClCompile Include="SampleGui.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="PostEffectDeferredShading.cpp" />
+    <ClCompile Include="PostEffectEdgeId.cpp" />
+    <ClCompile Include="PostEffectGammaCorrection.cpp" />
+    <ClCompile Include="PostEffectHDR.cpp" />
+    <ClCompile Include="EntityAvatar.cpp" />
+    <ClCompile Include="EntityMover.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CustomClassCreater.h" />
+    <ClInclude Include="Sample.h" />
+    <ClInclude Include="SampleApp.h" />
+    <ClInclude Include="SampleConsole.h" />
+    <ClInclude Include="SampleGui.h" />
+    <ClInclude Include="Test.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="PostEffectDeferredShading.h" />
+    <ClInclude Include="PostEffectEdgeId.h" />
+    <ClInclude Include="PostEffectGammaCorrection.h" />
+    <ClInclude Include="PostEffectHDR.h" />
+    <ClInclude Include="EntityAvatar.h" />
+    <ClInclude Include="EntityMover.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sample.ico" />
+    <None Include="small.ico" />
+    <None Include="fx\base.fx" />
+    <None Include="fx\bump.fx" />
+    <None Include="fx\custom.fx" />
+    <None Include="fx\deferred.fx" />
+    <None Include="fx\deferredsingle.fx" />
+    <None Include="fx\edge.fx" />
+    <None Include="fx\edgeid.fx" />
+    <None Include="fx\gouraud.fx" />
+    <None Include="fx\hdr.fx" />
+    <None Include="fx\hemisphere.fx" />
+    <None Include="fx\makenormaltable.fx" />
+    <None Include="fx\normal.fx" />
+    <None Include="fx\pm.fx" />
+    <None Include="fx\pom.fx" />
+    <None Include="fx\reflection.fx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Sample.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

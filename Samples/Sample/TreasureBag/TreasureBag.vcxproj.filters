@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{70249f44-5b92-41de-8aa7-37cc9184827c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root">
+      <UniqueIdentifier>{a22abf67-64e1-4ab0-9854-d2add994a9cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom">
+      <UniqueIdentifier>{dbfde492-c3b3-4c63-aaee-c8514f57df10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Core">
+      <UniqueIdentifier>{534e3b1c-c148-4338-8be4-ee615e715101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Core\Core">
+      <UniqueIdentifier>{c64a2751-b297-454c-9021-d661640c9376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Core\Script">
+      <UniqueIdentifier>{7d55b9d2-89a2-4552-8f06-81735aa22bf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Render">
+      <UniqueIdentifier>{7db20660-43c5-4d30-b8ab-3a41e58b701a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Render\Scene">
+      <UniqueIdentifier>{9decede1-0a57-4b31-b0f7-e8ea71d8825e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Render\Scene\Animation">
+      <UniqueIdentifier>{ec8a0d2d-2440-4008-8f39-e8e6a516430f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Render\Scene\Animation\ASM">
+      <UniqueIdentifier>{ece7aa0d-e1f4-4197-956d-4bd037355d55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Render\Scene\Animation\ASM\Action">
+      <UniqueIdentifier>{94954623-de20-4d0c-9622-88e3efef2308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Render\Entity">
+      <UniqueIdentifier>{25d36525-4618-459c-8baf-b9ba89a14240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Render\Entity\Manager">
+      <UniqueIdentifier>{05f9ad1f-e04f-4acb-8726-3d3a8716ece9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{e04c1524-4997-4da6-a614-b195a425773f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\GameState">
+      <UniqueIdentifier>{58112818-6ac7-4c96-9d3c-2d5f0d51bdac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Core\Patterns">
+      <UniqueIdentifier>{75e47423-11ec-4913-a9f0-5095fc0930d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine Custom\Core\Patterns\Message">
+      <UniqueIdentifier>{72fb2bb3-51e5-418d-b7cd-6252c1f58963}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="TreasureBag.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main\Definition.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="TreasureBag.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Include\CustomClassCreater.h">
+      <Filter>Engine Custom\Core\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Include\CustomAnimationActionManager.h">
+      <Filter>Engine Custom\Render\Scene\Animation\ASM</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Include\AnimationDamage.h">
+      <Filter>Engine Custom\Render\Scene\Animation\ASM\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Include\CustomAnimationActionEnum.h">
+      <Filter>Engine Custom\Render\Scene\Animation\ASM\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Include\CustomLuaManager.h">
+      <Filter>Engine Custom\Core\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Renderer\Include\CustomEntityManager.h">
+      <Filter>Engine Custom\Render\Entity\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\TreasureApp.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameState\GameStateManager.h">
+      <Filter>Game\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Include\MsgType.h">
+      <Filter>Engine Custom\Core\Patterns\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Include\CustomMsgManager.h">
+      <Filter>Engine Custom\Core\Patterns\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Include\MsgCallBack.h">
+      <Filter>Engine Custom\Core\Patterns\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Include\MsgInfoList.h">
+      <Filter>Engine Custom\Core\Patterns\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameState\LoadingState.h">
+      <Filter>Game\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameState\LoginState.h">
+      <Filter>Game\GameState</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameState\PlayState.h">
+      <Filter>Game\GameState</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+    <ClCompile Include="TreasureBag.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Source\CustomClassCreater.cpp">
+      <Filter>Engine Custom\Core\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Source\CustomAnimationActionManager.cpp">
+      <Filter>Engine Custom\Render\Scene\Animation\ASM</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Source\AnimationDamager.cpp">
+      <Filter>Engine Custom\Render\Scene\Animation\ASM\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Source\CustomLuaManager.cpp">
+      <Filter>Engine Custom\Core\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Renderer\Source\CustomEntityManager.cpp">
+      <Filter>Engine Custom\Render\Entity\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\TreasureApp.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameState\GameStateManager.cpp">
+      <Filter>Game\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Source\CustomMsgManager.cpp">
+      <Filter>Engine Custom\Core\Patterns\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Source\MsgCallBack.cpp">
+      <Filter>Engine Custom\Core\Patterns\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameState\LoadingState.cpp">
+      <Filter>Game\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameState\LoginState.cpp">
+      <Filter>Game\GameState</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\GameState\PlayState.cpp">
+      <Filter>Game\GameState</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TreasureBag.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

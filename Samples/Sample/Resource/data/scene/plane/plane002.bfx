@@ -1,0 +1,5 @@
+[material]
+name 02-Default
+shader base
+shader bump
+[end]

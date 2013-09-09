@@ -1,0 +1,24 @@
+[value]
+scene true
+applylight true
+alltexture false
+copytexture false
+log_material true
+log_mesh true
+align 0
+primitive 0
+depthlevel 4
+expandk 1
+fvf_position false
+fvf_normal true
+fvf_tangent false
+fvf_binormal false
+fvf_color true
+fvf_tex0 true
+fvf_tex1 false
+fvf_tex2 false
+gpuani true
+[end]
+[motion]
+default 0 100
+[end]

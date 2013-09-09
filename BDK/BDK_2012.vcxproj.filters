@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{42bf273e-7ca0-45d9-81f2-6b5fb44cf02b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Definition">
+      <UniqueIdentifier>{d9829aaa-f722-419e-8338-3e41fb344d7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RTTI">
+      <UniqueIdentifier>{3e98bab1-8a47-44a4-8c47-8d6c784cc923}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectoryInfo">
+      <UniqueIdentifier>{c4910d0a-ea1f-44a6-94d6-f7223ba709d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStruct">
+      <UniqueIdentifier>{903bedbb-f7b3-4f0e-a95d-6f89421c9969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStruct\Bucket">
+      <UniqueIdentifier>{06f90d56-b845-4fae-b5e5-c53ebf8eb608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStruct\HashFunctions">
+      <UniqueIdentifier>{99ffdeda-618e-456c-8508-48a1feb7ff7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{06b9f765-c2ad-4cad-8b58-112adf346b83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns">
+      <UniqueIdentifier>{3051f152-6ec4-4441-b997-d3e3e33ce3fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\Factory">
+      <UniqueIdentifier>{583634d5-20ba-4932-92e4-d31f6678ff71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\Factory\DataFactory">
+      <UniqueIdentifier>{c9e3f07b-7025-4986-bb2b-94a16b16ec03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\Factory\ObjectFactory">
+      <UniqueIdentifier>{55154367-5a63-4241-8fe8-02cef0d10c9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\Singlton">
+      <UniqueIdentifier>{408149ae-e127-4929-b74b-afc9fa29d1b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\State">
+      <UniqueIdentifier>{1e66edf8-76a4-4556-ae0d-e148d0ffaf85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{97caacc5-4ef7-4d5e-8a2a-782c2f36a5bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Lua">
+      <UniqueIdentifier>{f3586c59-7dee-481c-a041-9055897c0ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Helper">
+      <UniqueIdentifier>{aaab59d7-2a28-46d5-9a93-b1f06485b4f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Lua\lib">
+      <UniqueIdentifier>{bece94f7-e916-4b5c-bcf3-28608fb9f77d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{f72e1c22-a333-4f15-94ba-2e5027a03468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InternString">
+      <UniqueIdentifier>{74e06103-0e2e-4749-8de9-677680e15407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\FreeListPolicities">
+      <UniqueIdentifier>{0c98e2c4-6a54-46bf-935f-99be84bb41a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\Pool">
+      <UniqueIdentifier>{a4934686-60b5-490b-9292-e3ccf6d13e87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\Scheduler">
+      <UniqueIdentifier>{121aaef2-3723-498a-89ad-7c4cc038082e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading">
+      <UniqueIdentifier>{443b04a2-76a3-4a19-a5b2-f6589ce3a9e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading\CriticalSection">
+      <UniqueIdentifier>{ce965051-29d9-42ef-85f8-5b8ad47fc37e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading\Thread">
+      <UniqueIdentifier>{9f04d5a3-f18f-4b9f-9b89-a7e614d2ebb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Profile">
+      <UniqueIdentifier>{38c62c28-8722-43b5-bb37-49389af0e8c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{a42e31e3-1b15-4e0d-b638-494faa67db70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Rand">
+      <UniqueIdentifier>{da50c84d-8bbe-4069-ab87-1bdbb707f141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Vector">
+      <UniqueIdentifier>{41147e83-6266-4fda-b269-9650b3cfee51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Matrix">
+      <UniqueIdentifier>{e352c738-597e-4d55-a054-503cdb13b447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Bounding">
+      <UniqueIdentifier>{87107e2b-305d-4d97-8854-c171921e8eea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Line">
+      <UniqueIdentifier>{9e0f9654-0bff-43cb-aa7c-2412732f3f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Ray">
+      <UniqueIdentifier>{cdd221d2-8ccb-485c-812f-5722969baa32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Plane">
+      <UniqueIdentifier>{776815cd-855a-464e-8d29-1d659ce719cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Collision">
+      <UniqueIdentifier>{b81ad307-63ed-488f-8511-898375e04d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Interpolation">
+      <UniqueIdentifier>{55f54361-9988-4bf2-91e7-7e2389176977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Noise">
+      <UniqueIdentifier>{69e4d730-9d03-47c0-aaa8-28801fe9f9ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Rect">
+      <UniqueIdentifier>{a93eea10-6425-47a1-b2a5-05bb6ede68ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Quaternion">
+      <UniqueIdentifier>{a2c5809d-b8aa-47ba-9670-9e3c0e8cd6d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UUID">
+      <UniqueIdentifier>{ba01566b-7070-4307-9172-1ff00cb2a6f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemInfo">
+      <UniqueIdentifier>{3456284e-97ca-4c6a-9121-cd1bf1efb5b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Patterns\Msg">
+      <UniqueIdentifier>{b47d314a-68e3-4928-a8c8-1c3f22737691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XlsConvertor">
+      <UniqueIdentifier>{783c0387-c9fd-452b-992f-6a3cd4bac92c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\BreadTimer.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadInline.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadDefinition.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadRTTI.h">
+      <Filter>RTTI</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadStdHeader.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadDirectoryInfo.h">
+      <Filter>DirectoryInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadBucketHash.h">
+      <Filter>DataStruct\Bucket</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadBucketMap.h">
+      <Filter>DataStruct\Bucket</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadBucketVector.h">
+      <Filter>DataStruct\Bucket</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadHashFunctions.h">
+      <Filter>DataStruct\HashFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadMemoryLeakHeader.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadDataFactory.h">
+      <Filter>Patterns\Factory\DataFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadObjectFactory.h">
+      <Filter>Patterns\Factory\ObjectFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadSingleton.h">
+      <Filter>Patterns\Singlton</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadStateManager.h">
+      <Filter>Patterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadBaseState.h">
+      <Filter>Patterns\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadTrace.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadLuaManagerBase.h">
+      <Filter>Script\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadLuaTable.h">
+      <Filter>Script\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadStringHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\lauxlib.h">
+      <Filter>Script\Lua\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\lua.h">
+      <Filter>Script\Lua\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\lua_tinker.h">
+      <Filter>Script\Lua\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\luaconf.h">
+      <Filter>Script\Lua\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\lualib.h">
+      <Filter>Script\Lua\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadFile.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadNormalFile.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadPackedFile.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadFileHelper.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadHelperClass.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadInternString.h">
+      <Filter>InternString</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadUtils.h">
+      <Filter>Helper</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FreeList.h">
+      <Filter>Patterns\FreeListPolicities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FreeListPolicies.h">
+      <Filter>Patterns\FreeListPolicities</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadBoostNormalPool.h">
+      <Filter>Patterns\Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadBoostObjectPool.h">
+      <Filter>Patterns\Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadBoostSingletonPool.h">
+      <Filter>Patterns\Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadCachePool.h">
+      <Filter>Patterns\Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadScheduler.h">
+      <Filter>Patterns\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadCriticalSection.h">
+      <Filter>Threading\CriticalSection</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadDeletingThread.h">
+      <Filter>Threading\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadLoadingThread.h">
+      <Filter>Threading\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadThreadBase.h">
+      <Filter>Threading\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadProfile.h">
+      <Filter>Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadProfileManager.h">
+      <Filter>Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadMath.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadRand.h">
+      <Filter>Math\Rand</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\MersenneTwister.h">
+      <Filter>Math\Rand</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadVector2.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadVector3.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadVector4.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadSSEVector4.h">
+      <Filter>Math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadMatrix3.h">
+      <Filter>Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadMatrix4.h">
+      <Filter>Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadSSEMatrix4.h">
+      <Filter>Math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadAABB.h">
+      <Filter>Math\Bounding</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadBoundingSphere.h">
+      <Filter>Math\Bounding</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadOBB.h">
+      <Filter>Math\Bounding</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadBounding.h">
+      <Filter>Math\Bounding</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadLine.h">
+      <Filter>Math\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadRay.h">
+      <Filter>Math\Ray</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadPlane.h">
+      <Filter>Math\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadCollisionHelper.h">
+      <Filter>Math\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadInterpolation.h">
+      <Filter>Math\Interpolation</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadRect2.h">
+      <Filter>Math\Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadQuaternion.h">
+      <Filter>Math\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Perlin.h">
+      <Filter>Math\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadUUIDManager.h">
+      <Filter>UUID</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadSystemInfo.h">
+      <Filter>SystemInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadDtwinver.h">
+      <Filter>SystemInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadCpuInfo.h">
+      <Filter>SystemInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadMsgManagerBase.h">
+      <Filter>Patterns\Msg</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadMsgInfo.h">
+      <Filter>Patterns\Msg</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XlsData.h">
+      <Filter>XlsConvertor</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XlsDataSet.h">
+      <Filter>XlsConvertor</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XlsManager.h">
+      <Filter>XlsConvertor</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\BreadSkelCode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\BreadTimer.cpp">
+      <Filter>Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadDirectoryInfo.cpp">
+      <Filter>DirectoryInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadHashFunctions.cpp">
+      <Filter>DataStruct\HashFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadStateManager.cpp">
+      <Filter>Patterns\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadTrace.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadLuaManagerBase.cpp">
+      <Filter>Script\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\lua_tinker.cpp">
+      <Filter>Script\Lua\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadStringHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadNormalFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadPackedFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadFileHelper.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadInternString.cpp">
+      <Filter>InternString</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadUtils.cpp">
+      <Filter>Helper</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FreeListPolicies.cpp">
+      <Filter>Patterns\FreeListPolicities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadCachePool.cpp">
+      <Filter>Patterns\Pool</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadScheduler.cpp">
+      <Filter>Patterns\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadDeletingThread.cpp">
+      <Filter>Threading\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadLoadingThread.cpp">
+      <Filter>Threading\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadCriticalSection.cpp">
+      <Filter>Threading\CriticalSection</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadProfile.cpp">
+      <Filter>Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadProfileManager.cpp">
+      <Filter>Profile</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadMath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadRand.cpp">
+      <Filter>Math\Rand</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadVector2.cpp">
+      <Filter>Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadVector3.cpp">
+      <Filter>Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadSSEVector4.cpp">
+      <Filter>Math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadMatrix3.cpp">
+      <Filter>Math\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadMatrix4.cpp">
+      <Filter>Math\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadSSEMatrix4.cpp">
+      <Filter>Math\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadAABB.cpp">
+      <Filter>Math\Bounding</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadBoundingSphere.cpp">
+      <Filter>Math\Bounding</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadOBB.cpp">
+      <Filter>Math\Bounding</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadBounding.cpp">
+      <Filter>Math\Bounding</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadRay.cpp">
+      <Filter>Math\Ray</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadCollisionHelper.cpp">
+      <Filter>Math\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadInterpolation.cpp">
+      <Filter>Math\Interpolation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadRect2.cpp">
+      <Filter>Math\Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadQuaternion.cpp">
+      <Filter>Math\Quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadUUIDManager.cpp">
+      <Filter>UUID</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadCpuInfo.cpp">
+      <Filter>SystemInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadDtwinver.cpp">
+      <Filter>SystemInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadSystemInfo.cpp">
+      <Filter>SystemInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadMsgManagerBase.cpp">
+      <Filter>Patterns\Msg</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\XlsData.cpp">
+      <Filter>XlsConvertor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\XlsDataSet.cpp">
+      <Filter>XlsConvertor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\XlsManager.cpp">
+      <Filter>XlsConvertor</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BreadMemoryLeakHeader.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

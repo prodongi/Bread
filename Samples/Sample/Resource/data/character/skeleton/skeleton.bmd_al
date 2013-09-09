@@ -1,0 +1,29 @@
+[value]
+scene false
+applylight true
+alltexture false
+copytexture true
+log_material true
+log_mesh true
+align 0
+primitive 0
+depthlevel 4
+expandk 1
+fvf_position false
+fvf_normal true
+fvf_tangent false
+fvf_binormal false
+fvf_color true
+fvf_tex0 true
+fvf_tex1 false
+fvf_tex2 false
+gpuani true
+[end]
+[motion]
+walk 1 33
+run 35 47
+attack 49 59
+dead 61 71
+damage 73 83
+idle 84 94
+[end]

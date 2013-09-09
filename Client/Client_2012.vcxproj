@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_DX11|Win32">
+      <Configuration>Debug_DX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DX11|Win32">
+      <Configuration>Release_DX11</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1E7015FF-AFB5-4634-B2EB-8C2DEB8ABAC1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Client_2012</RootNamespace>
+    <ProjectName>Client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>BreadClientD</TargetName>
+    <OutDir>$(SolutionDir)\Out\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">
+    <TargetName>BreadClientD</TargetName>
+    <OutDir>$(SolutionDir)\Out\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>BreadClient</TargetName>
+    <OutDir>$(SolutionDir)\Out\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">
+    <TargetName>BreadClient</TargetName>
+    <OutDir>$(SolutionDir)\Out\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_HAS_ITERATOR_DEBUGGING#0;_SECURE_SCL#0;_PROFILE_;_D3D9_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Core\\Include;GUI\\Include;Game\\Include;Renderer\\Include;..\BDK\Include;..\Tool\Boost\boost-1_44;..\Tool\UnitTest++\src;..\Tool\D3DSDK\Include;..\Tool\freetype-2.3.5-1\include;..\Tool\loki-0.1.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4127;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/Ylsymbol %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) ..\Lib\$(TargetFileName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_DX11|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_HAS_ITERATOR_DEBUGGING#0;_SECURE_SCL#0;_PROFILE_;_D3D11_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(WindowsSDK_IncludePath);Core\\Include;GUI\\Include;Game\\Include;Renderer\\Include;..\BDK\Include;..\Tool\Boost\boost-1_44;..\Tool\UnitTest++\src;..\Tool\D3DSDK\Include;..\Tool\freetype-2.3.5-1\include;..\Tool\loki-0.1.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4127;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/Ylsymbol %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) ..\Lib\$(TargetFileName)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_SECURE_SCL#0;_PROFILE_;_D3D9_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Core\\Include;GUI\\Include;Game\\Include;Renderer\\Include;..\BDK\Include;..\Tool\Boost\boost-1_44;..\Tool\UnitTest++\src;..\Tool\D3DSDK\Include;..\Tool\freetype-2.3.5-1\include;..\Tool\loki-0.1.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseUnicodeForAssemblerListing>
+      </UseUnicodeForAssemblerListing>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4127;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) ..\Lib\$(TargetFileName)</Command>
+    </PostBuildEvent>
+    <Lib>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DX11|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_UNICODE;UNICODE;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;_SECURE_SCL#0;_PROFILE_;_D3D11_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>Core\\Include;GUI\\Include;Game\\Include;Renderer\\Include;..\BDK\Include;..\Tool\Boost\boost-1_44;..\Tool\UnitTest++\src;..\Tool\D3DSDK\Include;..\Tool\freetype-2.3.5-1\include;..\Tool\loki-0.1.7\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseUnicodeForAssemblerListing>
+      </UseUnicodeForAssemblerListing>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4127;4100;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) ..\Lib\$(TargetFileName)</Command>
+    </PostBuildEvent>
+    <Lib>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="Renderer\Source\fx\depthtexture.fx" />
+    <None Include="Renderer\Source\fx\posteffectssao.fx" />
+    <None Include="Renderer\Source\fx\ssao.fx" />
+    <None Include="Renderer\Source\fx\ubershader.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Include\BreadApplication.h" />
+    <ClInclude Include="Core\Include\BreadClassCreater.h" />
+    <ClInclude Include="Core\Include\BreadClientDefinition.h" />
+    <ClInclude Include="Core\Include\BreadClientSystemInfo.h" />
+    <ClInclude Include="Core\Include\BreadCore.h" />
+    <ClInclude Include="Core\Include\BreadCoreScript.h" />
+    <ClInclude Include="Core\Include\BreadDebug.h" />
+    <ClInclude Include="Core\Include\BreadDeclaration.h" />
+    <ClInclude Include="Core\Include\BreadEngineConfig.h" />
+    <ClInclude Include="Core\Include\BreadExceptionHandler.h" />
+    <ClInclude Include="Core\Include\BreadFileSystem.h" />
+    <ClInclude Include="Core\Include\BreadFileWatcher.h" />
+    <ClInclude Include="Core\Include\BreadFps.h" />
+    <ClInclude Include="Core\Include\BreadHeaders.h" />
+    <ClInclude Include="Core\Include\BreadLuaManager.h" />
+    <ClInclude Include="Core\Include\BreadMsgCallBack.h" />
+    <ClInclude Include="Core\Include\BreadMsgInfoList.h" />
+    <ClInclude Include="Core\Include\BreadMsgManager.h" />
+    <ClInclude Include="Core\Include\BreadMsgType.h" />
+    <ClInclude Include="Core\Include\BreadScreenShot.h" />
+    <ClInclude Include="Core\Include\BreadSerializeBase.h" />
+    <ClInclude Include="Game\Include\BreadMoveProxy.h" />
+    <ClInclude Include="Game\Include\BreadMoveProxyManager.h" />
+    <ClInclude Include="GUI\Include\BreadBackground.h" />
+    <ClInclude Include="GUI\Include\BreadButton.h" />
+    <ClInclude Include="GUI\Include\BreadCheckBox.h" />
+    <ClInclude Include="GUI\Include\BreadComboBox.h" />
+    <ClInclude Include="GUI\Include\BreadConsole.h" />
+    <ClInclude Include="GUI\Include\BreadD3DFont.h" />
+    <ClInclude Include="GUI\Include\BreadEditBox.h" />
+    <ClInclude Include="GUI\Include\BreadFontManager.h" />
+    <ClInclude Include="GUI\Include\BreadForm.h" />
+    <ClInclude Include="GUI\Include\BreadFreeType.h" />
+    <ClInclude Include="GUI\Include\BreadFreeTypeFont.h" />
+    <ClInclude Include="GUI\Include\BreadFreeTypeFontCash.h" />
+    <ClInclude Include="GUI\Include\BreadFreeTypeGlyph.h" />
+    <ClInclude Include="GUI\Include\BreadFreeTypeGlyphCash.h" />
+    <ClInclude Include="GUI\Include\BreadFreeTypeLine.h" />
+    <ClInclude Include="GUI\Include\BreadGui.h" />
+    <ClInclude Include="GUI\Include\BreadImm.h" />
+    <ClInclude Include="GUI\Include\BreadInputKey.h" />
+    <ClInclude Include="GUI\Include\BreadInputLocaleInfo.h" />
+    <ClInclude Include="GUI\Include\BreadInputSystem.h" />
+    <ClInclude Include="GUI\Include\BreadInputTypedef.h" />
+    <ClInclude Include="GUI\Include\BreadListBox.h" />
+    <ClInclude Include="GUI\Include\BreadRadioButton.h" />
+    <ClInclude Include="GUI\Include\BreadScrollBar.h" />
+    <ClInclude Include="GUI\Include\BreadSlider.h" />
+    <ClInclude Include="GUI\Include\BreadStaticText.h" />
+    <ClInclude Include="GUI\Include\BreadUIFreeTypeText.h" />
+    <ClInclude Include="GUI\Include\BreadUiPrimitive.h" />
+    <ClInclude Include="GUI\Include\BreadWindow.h" />
+    <ClInclude Include="GUI\Include\BreadWindowList.h" />
+    <ClInclude Include="GUI\Include\BreadWindowRenderData.h" />
+    <ClInclude Include="GUI\Include\BreadWindowXmlSerialize.h" />
+    <ClInclude Include="Renderer\Include\Bread2DTexture.h" />
+    <ClInclude Include="Renderer\Include\BreadAlphaAccumulate.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimation.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationAction.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationActionEnum.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationActionManager.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationAttack.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendResult.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTree.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTreeChildNode.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTreeInterResultNode.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTreeLastResultNode.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTreeNode.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTreePose.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendType.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTypeNormal.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationControlBox.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationController.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationDead.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationEvent.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationEventManager.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationIdle.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationJoint.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationManager.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationMotion.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationMotionSet.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationRun.h" />
+    <ClInclude Include="Renderer\Include\BreadAnimationWalk.h" />
+    <ClInclude Include="Renderer\Include\BreadAxis.h" />
+    <ClInclude Include="Renderer\Include\BreadBatchRenderManager.h" />
+    <ClInclude Include="Renderer\Include\BreadCacheMesh.h" />
+    <ClInclude Include="Renderer\Include\BreadCamera.h" />
+    <ClInclude Include="Renderer\Include\BreadCameraManager.h" />
+    <ClInclude Include="Renderer\Include\BreadCloud.h" />
+    <ClInclude Include="Renderer\Include\BreadCloudUberShader.h" />
+    <ClInclude Include="Renderer\Include\BreadCubeTexture.h" />
+    <ClInclude Include="Renderer\Include\BreadD3D11System.h" />
+    <ClInclude Include="Renderer\Include\BreadD3DCheckDevice.h" />
+    <ClInclude Include="Renderer\Include\BreadD3DDeclaration.h" />
+    <ClInclude Include="Renderer\Include\BreadD3DHeader.h" />
+    <ClInclude Include="Renderer\Include\BreadD3DSystem.h" />
+    <ClInclude Include="Renderer\Include\BreadD3DSystemClassify.h" />
+    <ClInclude Include="Renderer\Include\BreadD3DUtil.h" />
+    <ClInclude Include="Renderer\Include\BreadDebugRenderManager.h" />
+    <ClInclude Include="Renderer\Include\BreadDecalAccumulate.h" />
+    <ClInclude Include="Renderer\Include\BreadEntity.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityActor.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityAvatar.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityDecal.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityFadeManager.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityManager.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityMesh.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityMob.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityModel.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityNpc.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityPlane.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityPlayer.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityProp.h" />
+    <ClInclude Include="Renderer\Include\BreadEntityProperty.h" />
+    <ClInclude Include="Renderer\Include\BreadEnvironment.h" />
+    <ClInclude Include="Renderer\Include\BreadFog.h" />
+    <ClInclude Include="Renderer\Include\BreadFrustum.h" />
+    <ClInclude Include="Renderer\Include\BreadFrustumPlane.h" />
+    <ClInclude Include="Renderer\Include\BreadFrustumRadar.h" />
+    <ClInclude Include="Renderer\Include\BreadFVFInfo.h" />
+    <ClInclude Include="Renderer\Include\BreadGrid.h" />
+    <ClInclude Include="Renderer\Include\BreadIBInfo.h" />
+    <ClInclude Include="Renderer\Include\BreadIBInfo9.h" />
+    <ClInclude Include="Renderer\Include\BreadIBManager.h" />
+    <ClInclude Include="Renderer\Include\BreadIIBInfo11.h" />
+    <ClInclude Include="Renderer\Include\BreadIndexBuffer.h" />
+    <ClInclude Include="Renderer\Include\BreadIndexBuffer9.h" />
+    <ClInclude Include="Renderer\Include\BreadLight.h" />
+    <ClInclude Include="Renderer\Include\BreadLightManager.h" />
+    <ClInclude Include="Renderer\Include\BreadMaterial.h" />
+    <ClInclude Include="Renderer\Include\BreadMesh.h" />
+    <ClInclude Include="Renderer\Include\BreadMeshCreater.h" />
+    <ClInclude Include="Renderer\Include\BreadModelCache.h" />
+    <ClInclude Include="Renderer\Include\BreadModelCacheLoadingThread.h" />
+    <ClInclude Include="Renderer\Include\BreadNavigation.h" />
+    <ClInclude Include="Renderer\Include\BreadNavigationHeap.h" />
+    <ClInclude Include="Renderer\Include\BreadNavigationNode.h" />
+    <ClInclude Include="Renderer\Include\BreadNavigationPath.h" />
+    <ClInclude Include="Renderer\Include\BreadNoAlphaShaderAccumulate.h" />
+    <ClInclude Include="Renderer\Include\BreadOctree.h" />
+    <ClInclude Include="Renderer\Include\BreadOctreeNode.h" />
+    <ClInclude Include="Renderer\Include\BreadOctreeWorld.h" />
+    <ClInclude Include="Renderer\Include\BreadPick.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectBase.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectBloomH.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectBloomV.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectBrightPass.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectDecal.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectDOF.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectEdgeDetect.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectGBlurH.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectGBlurV.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectInverse.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectLightScattering.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectMonoChrome.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectNormalEdgeDetect.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectNoShader.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectScaleHalf.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectScaleOri.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectScaleQuart.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectSepia.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectShaderList.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectSSAO.h" />
+    <ClInclude Include="Renderer\Include\BreadPostEffectToneMap.h" />
+    <ClInclude Include="Renderer\Include\BreadPostProcessManager.h" />
+    <ClInclude Include="Renderer\Include\BreadProjectedShadow.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderCacheData.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderData.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderDataCollector.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderDataCollectorMtl.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderDataCollectorShader.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderDataManager.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderer.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderOutputInfo.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderPrimitive.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderPropertyManager.h" />
+    <ClInclude Include="Renderer\Include\BreadRenderToTexture.h" />
+    <ClInclude Include="Renderer\Include\BreadSceneManager.h" />
+    <ClInclude Include="Renderer\Include\BreadSerialize3D.h" />
+    <ClInclude Include="Renderer\Include\BreadSerializeBfx.h" />
+    <ClInclude Include="Renderer\Include\BreadSerializeBmd.h" />
+    <ClInclude Include="Renderer\Include\BreadSerializeBsd.h" />
+    <ClInclude Include="Renderer\Include\BreadShader.h" />
+    <ClInclude Include="Renderer\Include\BreadShaderEffect.h" />
+    <ClInclude Include="Renderer\Include\BreadShaderList.h" />
+    <ClInclude Include="Renderer\Include\BreadShadowBase.h" />
+    <ClInclude Include="Renderer\Include\BreadShadowCSM.h" />
+    <ClInclude Include="Renderer\Include\BreadShadowManager.h" />
+    <ClInclude Include="Renderer\Include\BreadShadowMap.h" />
+    <ClInclude Include="Renderer\Include\BreadShadowPSSM.h" />
+    <ClInclude Include="Renderer\Include\BreadShadowVolume.h" />
+    <ClInclude Include="Renderer\Include\BreadSkyBox.h" />
+    <ClInclude Include="Renderer\Include\BreadTerrain.h" />
+    <ClInclude Include="Renderer\Include\BreadTerrainCell.h" />
+    <ClInclude Include="Renderer\Include\BreadTerrainMeshCell.h" />
+    <ClInclude Include="Renderer\Include\BreadTexture.h" />
+    <ClInclude Include="Renderer\Include\BreadTextureCache.h" />
+    <ClInclude Include="Renderer\Include\BreadTextureCacheLoadingThread.h" />
+    <ClInclude Include="Renderer\Include\BreadTextureLoader.h" />
+    <ClInclude Include="Renderer\Include\BreadTextureManager.h" />
+    <ClInclude Include="Renderer\Include\BreadUberShader.h" />
+    <ClInclude Include="Renderer\Include\BreadUberShaderFragment.h" />
+    <ClInclude Include="Renderer\Include\BreadUberShaderManager.h" />
+    <ClInclude Include="Renderer\Include\BreadVBInfo.h" />
+    <ClInclude Include="Renderer\Include\BreadVBInfo11.h" />
+    <ClInclude Include="Renderer\Include\BreadVBInfo9.h" />
+    <ClInclude Include="Renderer\Include\BreadVBManager.h" />
+    <ClInclude Include="Renderer\Include\BreadVertexBuffer.h" />
+    <ClInclude Include="Renderer\Include\BreadVertexBuffer9.h" />
+    <ClInclude Include="Renderer\Include\BreadVolumeCloud.h" />
+    <ClInclude Include="Renderer\Include\BreadVolumeTexture.h" />
+    <ClInclude Include="Renderer\Include\BreadWaterUberShader.h" />
+    <ClInclude Include="Renderer\Include\BreadWeather.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Source\BreadApplication.cpp" />
+    <ClCompile Include="Core\Source\BreadClassCreater.cpp" />
+    <ClCompile Include="Core\Source\BreadClientSystemInfo.cpp" />
+    <ClCompile Include="Core\Source\BreadCore.cpp" />
+    <ClCompile Include="Core\Source\BreadCoreScript.cpp" />
+    <ClCompile Include="Core\Source\BreadDebug.cpp" />
+    <ClCompile Include="Core\Source\BreadEngineConfig.cpp" />
+    <ClCompile Include="Core\Source\BreadExceptionHandler.cpp" />
+    <ClCompile Include="Core\Source\BreadFileSystem.cpp" />
+    <ClCompile Include="Core\Source\BreadFileWatcher.cpp" />
+    <ClCompile Include="Core\Source\BreadFps.cpp" />
+    <ClCompile Include="Core\Source\BreadLuaManager.cpp" />
+    <ClCompile Include="Core\Source\BreadMsgCallBack.cpp" />
+    <ClCompile Include="Core\Source\BreadMsgManager.cpp" />
+    <ClCompile Include="Core\Source\BreadRegisterLuaFunc_CoreScript.cpp" />
+    <ClCompile Include="Core\Source\BreadScreenShot.cpp" />
+    <ClCompile Include="Core\Source\BreadSerializeBase.cpp" />
+    <ClCompile Include="Game\Source\BreadMoveProxy.cpp" />
+    <ClCompile Include="Game\Source\BreadMoveProxyManager.cpp" />
+    <ClCompile Include="GUI\Source\BreadBackground.cpp" />
+    <ClCompile Include="GUI\Source\BreadButton.cpp" />
+    <ClCompile Include="GUI\Source\BreadCheckBox.cpp" />
+    <ClCompile Include="GUI\Source\BreadComboBox.cpp" />
+    <ClCompile Include="GUI\Source\BreadConsole.cpp" />
+    <ClCompile Include="GUI\Source\BreadD3DFont.cpp" />
+    <ClCompile Include="GUI\Source\BreadEditBox.cpp" />
+    <ClCompile Include="GUI\Source\BreadFontManager.cpp" />
+    <ClCompile Include="GUI\Source\BreadForm.cpp" />
+    <ClCompile Include="GUI\Source\BreadFreeType.cpp" />
+    <ClCompile Include="GUI\Source\BreadFreeTypeFont.cpp" />
+    <ClCompile Include="GUI\Source\BreadFreeTypeFontCash.cpp" />
+    <ClCompile Include="GUI\Source\BreadFreeTypeGlyph.cpp" />
+    <ClCompile Include="GUI\Source\BreadFreeTypeGlyphCash.cpp" />
+    <ClCompile Include="GUI\Source\BreadFreeTypeLine.cpp" />
+    <ClCompile Include="GUI\Source\BreadGui.cpp" />
+    <ClCompile Include="GUI\Source\BreadImm.cpp" />
+    <ClCompile Include="GUI\Source\BreadInputLocaleInfo.cpp" />
+    <ClCompile Include="GUI\Source\BreadInputSystem.cpp" />
+    <ClCompile Include="GUI\Source\BreadListBox.cpp" />
+    <ClCompile Include="GUI\Source\BreadRadioButton.cpp" />
+    <ClCompile Include="GUI\Source\BreadScrollBar.cpp" />
+    <ClCompile Include="GUI\Source\BreadSlider.cpp" />
+    <ClCompile Include="GUI\Source\BreadStaticText.cpp" />
+    <ClCompile Include="GUI\Source\BreadUIFreeTypeText.cpp" />
+    <ClCompile Include="GUI\Source\BreadUiPrimitive.cpp" />
+    <ClCompile Include="GUI\Source\BreadWindow.cpp" />
+    <ClCompile Include="GUI\Source\BreadWindowRenderData.cpp" />
+    <ClCompile Include="GUI\Source\BreadWindowXmlSerialize.cpp" />
+    <ClCompile Include="Renderer\Source\Bread2DTexture.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAlphaAccumulate.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimation.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationAction.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationActionManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationAttack.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendResult.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTree.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTreeChildNode.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTreeInterResultNode.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTreeLastResultNode.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTreeNode.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTreePose.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendType.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTypeNormal.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationControlBox.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationController.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationDead.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationEvent.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationEventManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationIdle.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationJoint.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationMotion.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationMotionSet.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationRun.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAnimationWalk.cpp" />
+    <ClCompile Include="Renderer\Source\BreadAxis.cpp" />
+    <ClCompile Include="Renderer\Source\BreadBatchRenderManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadCacheMesh.cpp" />
+    <ClCompile Include="Renderer\Source\BreadCamera.cpp" />
+    <ClCompile Include="Renderer\Source\BreadCameraManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadCloud.cpp" />
+    <ClCompile Include="Renderer\Source\BreadCloudUberShader.cpp" />
+    <ClCompile Include="Renderer\Source\BreadCubeTexture.cpp" />
+    <ClCompile Include="Renderer\Source\BreadD3D11System.cpp" />
+    <ClCompile Include="Renderer\Source\BreadD3DCheckDevice.cpp" />
+    <ClCompile Include="Renderer\Source\BreadD3DSystem.cpp" />
+    <ClCompile Include="Renderer\Source\BreadD3DUtil.cpp" />
+    <ClCompile Include="Renderer\Source\BreadDebugRenderManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadDecalAccumulate.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntity.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityActor.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityAvatar.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityDecal.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityFadeManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityMesh.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityMob.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityModel.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityNpc.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityPlane.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityPlayer.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityProp.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEntityProperty.cpp" />
+    <ClCompile Include="Renderer\Source\BreadEnvironment.cpp" />
+    <ClCompile Include="Renderer\Source\BreadFog.cpp" />
+    <ClCompile Include="Renderer\Source\BreadFrustum.cpp" />
+    <ClCompile Include="Renderer\Source\BreadFrustumPlane.cpp" />
+    <ClCompile Include="Renderer\Source\BreadFrustumRadar.cpp" />
+    <ClCompile Include="Renderer\Source\BreadGrid.cpp" />
+    <ClCompile Include="Renderer\Source\BreadIBInfo.cpp" />
+    <ClCompile Include="Renderer\Source\BreadIBInfo9.cpp" />
+    <ClCompile Include="Renderer\Source\BreadIBManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadIIBInfo11.cpp" />
+    <ClCompile Include="Renderer\Source\BreadIndexBuffer9.cpp" />
+    <ClCompile Include="Renderer\Source\BreadLight.cpp" />
+    <ClCompile Include="Renderer\Source\BreadLightManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadMaterial.cpp" />
+    <ClCompile Include="Renderer\Source\BreadMesh.cpp" />
+    <ClCompile Include="Renderer\Source\BreadMeshCreater.cpp" />
+    <ClCompile Include="Renderer\Source\BreadModelCache.cpp" />
+    <ClCompile Include="Renderer\Source\BreadNavigation.cpp" />
+    <ClCompile Include="Renderer\Source\BreadNavigationHeap.cpp" />
+    <ClCompile Include="Renderer\Source\BreadNavigationNode.cpp" />
+    <ClCompile Include="Renderer\Source\BreadNavigationPath.cpp" />
+    <ClCompile Include="Renderer\Source\BreadNoAlphaShaderAccumulate.cpp" />
+    <ClCompile Include="Renderer\Source\BreadOctree.cpp" />
+    <ClCompile Include="Renderer\Source\BreadOctreeNode.cpp" />
+    <ClCompile Include="Renderer\Source\BreadOctreeWorld.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPick.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectBase.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectBloomH.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectBloomV.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectBrightPass.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectDecal.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectDOF.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectEdgeDetect.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectGBlurH.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectGBlurV.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectInverse.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectLightScattering.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectMonoChrome.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectNormalEdgeDetect.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectScaleHalf.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectScaleOri.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectScaleQuart.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectSepia.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectShaderList.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectSSAO.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostEffectToneMap.cpp" />
+    <ClCompile Include="Renderer\Source\BreadPostProcessManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadProjectedShadow.cpp" />
+    <ClCompile Include="Renderer\Source\BreadRenderCacheData.cpp" />
+    <ClCompile Include="Renderer\Source\BreadRenderData.cpp" />
+    <ClCompile Include="Renderer\Source\BreadRenderDataCollector.cpp" />
+    <ClCompile Include="Renderer\Source\BreadRenderDataCollectorMtl.cpp" />
+    <ClCompile Include="Renderer\Source\BreadRenderDataCollectorShader.cpp" />
+    <ClCompile Include="Renderer\Source\BreadRenderer.cpp" />
+    <ClCompile Include="Renderer\Source\BreadRenderOutputInfo.cpp" />
+    <ClCompile Include="Renderer\Source\BreadRenderPrimitive.cpp" />
+    <ClCompile Include="Renderer\Source\BreadRenderPropertyManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadRenderToTexture.cpp" />
+    <ClCompile Include="Renderer\Source\BreadSceneManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadSerialize3D.cpp" />
+    <ClCompile Include="Renderer\Source\BreadSerializeBfx.cpp" />
+    <ClCompile Include="Renderer\Source\BreadSerializeBmd.cpp" />
+    <ClCompile Include="Renderer\Source\BreadSerializeBsd.cpp" />
+    <ClCompile Include="Renderer\Source\BreadShader.cpp" />
+    <ClCompile Include="Renderer\Source\BreadShaderEffect.cpp" />
+    <ClCompile Include="Renderer\Source\BreadShaderList.cpp" />
+    <ClCompile Include="Renderer\Source\BreadShadowCSM.cpp" />
+    <ClCompile Include="Renderer\Source\BreadShadowManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadShadowMap.cpp" />
+    <ClCompile Include="Renderer\Source\BreadShadowPSSM.cpp" />
+    <ClCompile Include="Renderer\Source\BreadShadowVolume.cpp" />
+    <ClCompile Include="Renderer\Source\BreadSkyBox.cpp" />
+    <ClCompile Include="Renderer\Source\BreadTerrain.cpp" />
+    <ClCompile Include="Renderer\Source\BreadTerrainCell.cpp" />
+    <ClCompile Include="Renderer\Source\BreadTerrainMeshCell.cpp" />
+    <ClCompile Include="Renderer\Source\BreadTexture.cpp" />
+    <ClCompile Include="Renderer\Source\BreadTextureCache.cpp" />
+    <ClCompile Include="Renderer\Source\BreadTextureLoader.cpp" />
+    <ClCompile Include="Renderer\Source\BreadTextureManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadUberShader.cpp" />
+    <ClCompile Include="Renderer\Source\BreadUberShaderFragment.cpp" />
+    <ClCompile Include="Renderer\Source\BreadUberShaderManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadVBInfo.cpp" />
+    <ClCompile Include="Renderer\Source\BreadVBInfo11.cpp" />
+    <ClCompile Include="Renderer\Source\BreadVBInfo9.cpp" />
+    <ClCompile Include="Renderer\Source\BreadVBManager.cpp" />
+    <ClCompile Include="Renderer\Source\BreadVertexBuffer9.cpp" />
+    <ClCompile Include="Renderer\Source\BreadVolumeCloud.cpp" />
+    <ClCompile Include="Renderer\Source\BreadVolumeTexture.cpp" />
+    <ClCompile Include="Renderer\Source\BreadWaterUberShader.cpp" />
+    <ClCompile Include="Renderer\Source\BreadWeather.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

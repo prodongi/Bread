@@ -1,0 +1,20 @@
+[material]
+name models/characters/common/leftbet
+shader base
+[end]
+[material]
+name models/characters/common/rightbet
+shader base
+[end]
+[material]
+name models/characters/common/teethbet
+shader base
+[end]
+[material]
+name models/monsters/maledict/maledict
+shader base
+[end]
+[material]
+name models/monsters/maledict/mtongue
+shader base
+[end]

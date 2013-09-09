@@ -1,0 +1,20 @@
+[material]
+name M_foot_Ep00_00
+shader base
+[end]
+[material]
+name M_glove_Ep00_00
+shader base
+[end]
+[material]
+name M_head_face_Ep00_00
+shader base
+[end]
+[material]
+name M_pants_Ep00_00
+shader base
+[end]
+[material]
+name M_upper_Ep00_00
+shader base
+[end]

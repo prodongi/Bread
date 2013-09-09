@@ -1,0 +1,65 @@
+
+2011-10-29(yymmdd), 	03:05:50(hhmmss)
+
+########################################
+#### system ############################
+########################################
+
+[DISPLAY INFO]
+Display Name : NVIDIA GeForce 8500 GT
+Screen Resolution : Width : 1680, Height : 1050
+Color Depth : 8 Bits Per Pixel
+
+[OS INFO]
+Microsoft Windows XP Professional Service Pack 3 (build 2600)
+
+[PROCESSOR INFO]
+Number Of nProcessor : 2
+Processor Name : Unknown P6 family
+
+[DRIVE SPACE INFO]
+*** Hard Disk: (c:\) ***
+Total size: 199996 (MB)
+Used: 64543 (MB)
+Free: 135453 (MB)
+Max of File Length Support: 255
+File System: NTFS
+*** Hard Disk: (d:\) ***
+Total size: 181547 (MB)
+Used: 100414 (MB)
+Free: 81132 (MB)
+Max of File Length Support: 255
+File System: NTFS
+
+[RAM INFO]
+Memory Available: 1427520KB
+Precent of used RAM: 31%
+Free RAM: 69%
+
+[DIRECTX VERSION INFO]
+DirectX 9.0c installed
+
+[SOUND INFO]
+[0] R
+
+########################################
+#### exception #########################
+########################################
+
+[Project] caused an EXCEPTION_ACCESS_VIOLATION in module
+[Project] at 001B:0043100F, Bread::cMath::rand()+0015 byte(s),
+d:\work\bread\core\source\breadmath.cpp, line 0052+0006 byte(s)
+
+EAX=00000001  EBX=77CF8BF6  ECX=00000000  EDX=00000001  ESI=0013FEC0
+EDI=77CF929B  EBP=009CA2C8  ESP=0013FDEC  EIP=0043100F  FLG=00010202
+CS=001B   DS=0023  SS=0023  ES=0023   FS=003B  GS=0000
+
+001B:0043100F [Project], Bread::cMath::rand()+0015 byte(s), d:\work\bread\core\source\breadmath.cpp, line 0052+0006 byte(s)
+001B:00402A74 [Project], cTest::addModel()+0116 byte(s), d:\work\bread\samples\sample\client\test.cpp, line 0237+0031 byte(s)
+001B:004030D0 [Project], cTest::update()+0032 byte(s), d:\work\bread\samples\sample\client\test.cpp, line 0162
+001B:00401990 [Project], cSampleApplication::update()+0032 byte(s), d:\work\bread\samples\sample\client\sampleapp.cpp, line 0175
+001B:0042EBCF [Project], Bread::cApplication::run()+0191 byte(s), d:\work\bread\core\source\breadapplication.cpp, line 0104+0027 byte(s)
+001B:004012A5 [Project], wWinMain()+0085 byte(s), d:\work\bread\samples\sample\client\sample.cpp, line 0019
+001B:0044F763 [Project], __tmainCRTStartup()+0336 byte(s), f:\dd\vctools\crt_bld\self_x86\crt\src\crtexe.c, line 0578+0028 byte(s)
+001B:7C7E7077 [Project], RegisterWaitForInputIdle()+0073 byte(s)
+

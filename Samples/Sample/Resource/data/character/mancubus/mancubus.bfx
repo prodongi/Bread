@@ -1,0 +1,16 @@
+[material]
+name 02 - Default
+shader base
+[end]
+[material]
+name models/monsters/mancubus/mancubus
+shader base
+[end]
+[material]
+name models/monsters/mancubus/mpipe
+shader base
+[end]
+[material]
+name models/monsters/mancubus/mpipe_fx
+shader base
+[end]

@@ -1,0 +1,13 @@
+[material]
+name 01 - Default
+shader base
+shader bump
+[end]
+[material]
+name models/monsters/guardian/guardianfx
+shader base
+[end]
+[material]
+name models/monsters/guardian/tongue
+shader base
+[end]

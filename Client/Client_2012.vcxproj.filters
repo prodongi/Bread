@@ -1,0 +1,1506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{85568699-4035-4305-a176-cf465862509a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Core\Application">
+      <UniqueIdentifier>{6c81d870-5820-4949-8f73-7dbe55ab53df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Core">
+      <UniqueIdentifier>{162f9178-8811-49e1-91f9-d29619fca10d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Core\ScreenShot">
+      <UniqueIdentifier>{edd9ed85-5e62-403d-a411-30a764fe03c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Debug">
+      <UniqueIdentifier>{e19e7a30-2342-4e1f-a845-775ce1caaa43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Debug\Exception">
+      <UniqueIdentifier>{bab8111b-3e3d-4966-a046-fee1f6607bf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Patterns">
+      <UniqueIdentifier>{d13a516a-ebfb-4e05-9930-d74cb61827f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Patterns\Message">
+      <UniqueIdentifier>{6114f914-19de-4e1a-bd5d-7d66975c27c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Script">
+      <UniqueIdentifier>{9d432f37-5ed4-4301-9b99-62e0b2e40445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Script\Lua">
+      <UniqueIdentifier>{8b412a8a-af49-4223-95ee-df1f06bb6b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Script\Lua\Script">
+      <UniqueIdentifier>{e71fd5d6-984d-4d58-95ae-1f6a1800e208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\MoveProxy">
+      <UniqueIdentifier>{8594c0ac-fb09-4742-856b-b100dcb46bb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Console">
+      <UniqueIdentifier>{af4310e0-4457-4810-9b8b-84469d6475a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Font">
+      <UniqueIdentifier>{60921937-236d-4902-8e87-af449b21cfb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Input">
+      <UniqueIdentifier>{f8a32022-d795-400f-8d1e-01fa9ee536a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Ime">
+      <UniqueIdentifier>{eb59c203-e5fb-4171-830b-aa904521d31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\LocaleInfo">
+      <UniqueIdentifier>{70e2360d-9148-4756-bcfa-11a349c8fb85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Manager">
+      <UniqueIdentifier>{fd8cde74-f271-4a88-bbc9-afdf7ed3a737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\RenderData">
+      <UniqueIdentifier>{d8236ecc-0d3e-48ef-b6a1-e691ad5bc837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Window">
+      <UniqueIdentifier>{ec0c73fb-5717-4732-8a92-96adbc9f019b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Xml">
+      <UniqueIdentifier>{61a0e145-ecd6-4740-8430-16bb5ffc106c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Cache">
+      <UniqueIdentifier>{91603900-1cb5-49a0-8a02-a8281ea84fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Camera">
+      <UniqueIdentifier>{08611efa-05a7-4bf8-82e7-3285d512fb68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\D3D">
+      <UniqueIdentifier>{78cfe9c6-822e-476a-bd45-81a246da5083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Entity">
+      <UniqueIdentifier>{b9f3b09c-d745-403e-a0e1-55d1d79f05d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Environment">
+      <UniqueIdentifier>{26e817e4-9e56-4501-bd6d-d12963ca8ab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Helper">
+      <UniqueIdentifier>{1360e07a-763a-4aa0-b30c-c6ff037bb7ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Light">
+      <UniqueIdentifier>{bb93a62d-9aec-4539-a3ce-b1a9e1dcf567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Mesh">
+      <UniqueIdentifier>{fd7171a9-11e3-45f8-b2b3-4b5a79e442fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Renderer">
+      <UniqueIdentifier>{31d5a205-8e6c-42c0-850b-222ad39f4ed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene">
+      <UniqueIdentifier>{4a3e5ab7-f1a3-44f1-8840-c7b8f24a7e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Serialize">
+      <UniqueIdentifier>{a29542cb-7a1e-4406-a997-f7dfa86ffe9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Shadow">
+      <UniqueIdentifier>{53bfda72-a019-4a7b-9ad0-fa12673f6fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Cache\Model">
+      <UniqueIdentifier>{68b34908-e7e1-4e80-bbd4-206f56cffd1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Cache\Texture">
+      <UniqueIdentifier>{35931464-b4f8-4692-b62f-b24184c12bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Camera\Frustum">
+      <UniqueIdentifier>{90caf760-a932-4f23-a25b-72d8493eecf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\D3D\Util">
+      <UniqueIdentifier>{0fe4ca92-22e7-4774-ae20-92e03553ed71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Entity\Entity">
+      <UniqueIdentifier>{2332956f-7969-4697-8695-e85dc114383a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Entity\Manager">
+      <UniqueIdentifier>{fca30477-2543-44fe-b178-a8ab160248a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Environment\Cloud">
+      <UniqueIdentifier>{d50494ac-098e-4cb2-9bcc-3fc5243dfe09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Environment\Fog">
+      <UniqueIdentifier>{726c22f0-bedd-468b-a359-a3462ed73562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Environment\SkyBox">
+      <UniqueIdentifier>{b16556e9-1ef4-427c-8ca6-7b6d57d0781d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Environment\Weather">
+      <UniqueIdentifier>{c6e5154c-c137-4e5e-ae4f-75ee8e03364b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Helper\Axis">
+      <UniqueIdentifier>{eedeea5a-97da-4241-b10f-e3777ef6ac12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Helper\Grid">
+      <UniqueIdentifier>{2a13d358-84db-4d01-950d-0bbeba222e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Renderer\BatchRender">
+      <UniqueIdentifier>{b81b9125-bc7f-464e-a916-48ad56d58483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Renderer\DebugRender">
+      <UniqueIdentifier>{be3fb79a-9fc3-4f25-ba3d-159226366dde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation">
+      <UniqueIdentifier>{73e13357-9d55-4f40-a0eb-420025fc5433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Buffer">
+      <UniqueIdentifier>{125be476-a062-4fdc-98f6-5a3c66cf5c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Octree">
+      <UniqueIdentifier>{7f553e4d-81f4-4a35-a776-bcd280c78a50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Pick">
+      <UniqueIdentifier>{8f6a411e-7162-4fd6-9987-178bfbbb50f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\PostProcess">
+      <UniqueIdentifier>{5919d8c4-990c-45ad-920e-4b979696698d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\RenderData">
+      <UniqueIdentifier>{f37d3a38-b905-4508-8a11-7bfee55f4bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Scene">
+      <UniqueIdentifier>{861f532d-2d41-4f38-af7f-557ac2d93088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Shader">
+      <UniqueIdentifier>{805b269d-33f9-48d9-9229-ab85f73cacb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Terrain">
+      <UniqueIdentifier>{0f19a26f-17d6-4505-82fe-391d6ae341e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Texture">
+      <UniqueIdentifier>{07c25bfb-41bf-43c9-a602-610da0cdc05b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation\ASM">
+      <UniqueIdentifier>{bffac46b-ebd2-4494-889d-4dc94df2a3b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation\ASM\Action">
+      <UniqueIdentifier>{a1320cc9-5889-486f-ae54-02fab8a4a5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation\BlendTree">
+      <UniqueIdentifier>{b2c81bc2-5e43-48a6-bf24-3159e2ff3662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation\BlendTree\Node">
+      <UniqueIdentifier>{2bdd28ec-e0cc-442c-af7e-6cb56a43ace4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation\BlendTree\Pose">
+      <UniqueIdentifier>{2be77bbf-20fe-4179-b880-11b119890cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation\BlendTree\Result">
+      <UniqueIdentifier>{3cae13b1-37c2-46ac-925a-d0c5f86a959f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation\BlendTree\Tree">
+      <UniqueIdentifier>{75ca2f49-60c2-4dd9-8f8d-916045502fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation\BlendTree\Type">
+      <UniqueIdentifier>{a131735a-1c89-40cd-9fb6-b7090358577e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation\Controller">
+      <UniqueIdentifier>{63d52dd0-f485-47a5-9a41-aeaa97cafd50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Animation\Event">
+      <UniqueIdentifier>{fa58b669-b191-4947-871d-f50562de8a56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\PostProcess\PostEffect">
+      <UniqueIdentifier>{083fc274-4657-45cd-a80c-7b00925a4239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\RenderData\Accumulate">
+      <UniqueIdentifier>{e34eb5a4-96c6-47da-b3b5-5d4880597597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\RenderData\Collector">
+      <UniqueIdentifier>{d588545c-910c-4372-8142-57285ccb543b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Shader\fx">
+      <UniqueIdentifier>{a66c6dd2-43f0-4eda-a6be-3e8ca0684727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Shader\NormalShader">
+      <UniqueIdentifier>{f21eeabe-05f5-4f17-9fbe-d64cd70da151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Shader\PostEffectShader">
+      <UniqueIdentifier>{100481a6-601c-4679-9cec-12c6f9c5ed84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Shader\UberShader">
+      <UniqueIdentifier>{7f5b541b-e113-4b05-b953-e96ae2d907ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\SystemInfo">
+      <UniqueIdentifier>{fe056bf6-e8cf-4d2f-80e2-6e7daf900584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\FileSystems">
+      <UniqueIdentifier>{1ae9a91e-df5e-482d-893b-0674a34cdc35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\FileSystems\FileSystem">
+      <UniqueIdentifier>{8507f664-b77e-435d-9a65-962e6567dc7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\FileSystems\FileSystem\FileWatcher">
+      <UniqueIdentifier>{055868aa-32e7-4705-9b1b-1d88fe20ac2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\FileSystems\FileSystem\Serialize">
+      <UniqueIdentifier>{372dac22-434a-49c4-89ff-dda49079cc31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Fps">
+      <UniqueIdentifier>{36e84b3e-7540-4e82-97fd-ac6f845647a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\Scene\Terrain\Navigation">
+      <UniqueIdentifier>{97fb6345-d8ab-4ff9-8398-82031a15b21a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\D3D\D3D9">
+      <UniqueIdentifier>{5d1d56c2-02fb-409c-9dc0-0c6fb667ae6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer\D3D\D3D11">
+      <UniqueIdentifier>{e05bfd46-aaa2-4327-9368-384502b9c982}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="Renderer\Source\fx\depthtexture.fx">
+      <Filter>Renderer\Scene\Shader\fx</Filter>
+    </None>
+    <None Include="Renderer\Source\fx\posteffectssao.fx">
+      <Filter>Renderer\Scene\Shader\fx</Filter>
+    </None>
+    <None Include="Renderer\Source\fx\ssao.fx">
+      <Filter>Renderer\Scene\Shader\fx</Filter>
+    </None>
+    <None Include="Renderer\Source\fx\ubershader.fx">
+      <Filter>Renderer\Scene\Shader\fx</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Include\BreadFps.h">
+      <Filter>Core\Fps</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadApplication.h">
+      <Filter>Core\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadClassCreater.h">
+      <Filter>Core\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadCore.h">
+      <Filter>Core\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadDeclaration.h">
+      <Filter>Core\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadEngineConfig.h">
+      <Filter>Core\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadHeaders.h">
+      <Filter>Core\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadScreenShot.h">
+      <Filter>Core\Core\ScreenShot</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadExceptionHandler.h">
+      <Filter>Core\Debug\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadDebug.h">
+      <Filter>Core\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadMsgCallBack.h">
+      <Filter>Core\Patterns\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadMsgInfoList.h">
+      <Filter>Core\Patterns\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadMsgManager.h">
+      <Filter>Core\Patterns\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadMsgType.h">
+      <Filter>Core\Patterns\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadCoreScript.h">
+      <Filter>Core\Script\Lua\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadLuaManager.h">
+      <Filter>Core\Script\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadFileWatcher.h">
+      <Filter>Core\FileSystems\FileSystem\FileWatcher</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadSerializeBase.h">
+      <Filter>Core\FileSystems\FileSystem\Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Include\BreadMoveProxy.h">
+      <Filter>Game\MoveProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadConsole.h">
+      <Filter>GUI\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadD3DFont.h">
+      <Filter>GUI\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadFontManager.h">
+      <Filter>GUI\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadFreeType.h">
+      <Filter>GUI\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadFreeTypeFont.h">
+      <Filter>GUI\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadFreeTypeFontCash.h">
+      <Filter>GUI\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadFreeTypeGlyph.h">
+      <Filter>GUI\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadFreeTypeGlyphCash.h">
+      <Filter>GUI\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadFreeTypeLine.h">
+      <Filter>GUI\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadUIFreeTypeText.h">
+      <Filter>GUI\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadImm.h">
+      <Filter>GUI\Ime</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadInputKey.h">
+      <Filter>GUI\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadInputSystem.h">
+      <Filter>GUI\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadInputTypedef.h">
+      <Filter>GUI\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadInputLocaleInfo.h">
+      <Filter>GUI\LocaleInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadGui.h">
+      <Filter>GUI\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadUiPrimitive.h">
+      <Filter>GUI\RenderData</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadWindowRenderData.h">
+      <Filter>GUI\RenderData</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadBackground.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadButton.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadCheckBox.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadComboBox.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadEditBox.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadListBox.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadRadioButton.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadScrollBar.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadSlider.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadStaticText.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadWindow.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadWindowList.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadForm.h">
+      <Filter>GUI\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI\Include\BreadWindowXmlSerialize.h">
+      <Filter>GUI\Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadModelCache.h">
+      <Filter>Renderer\Cache\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadModelCacheLoadingThread.h">
+      <Filter>Renderer\Cache\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadTextureCache.h">
+      <Filter>Renderer\Cache\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadTextureCacheLoadingThread.h">
+      <Filter>Renderer\Cache\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadFrustum.h">
+      <Filter>Renderer\Camera\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadFrustumPlane.h">
+      <Filter>Renderer\Camera\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadFrustumRadar.h">
+      <Filter>Renderer\Camera\Frustum</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadCamera.h">
+      <Filter>Renderer\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadCameraManager.h">
+      <Filter>Renderer\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadD3DUtil.h">
+      <Filter>Renderer\D3D\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntity.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityActor.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityAvatar.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityMesh.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityMob.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityModel.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityNpc.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityPlane.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityPlayer.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityProp.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityFadeManager.h">
+      <Filter>Renderer\Entity\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityManager.h">
+      <Filter>Renderer\Entity\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadCloud.h">
+      <Filter>Renderer\Environment\Cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadVolumeCloud.h">
+      <Filter>Renderer\Environment\Cloud</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadFog.h">
+      <Filter>Renderer\Environment\Fog</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadSkyBox.h">
+      <Filter>Renderer\Environment\SkyBox</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadWeather.h">
+      <Filter>Renderer\Environment\Weather</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEnvironment.h">
+      <Filter>Renderer\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAxis.h">
+      <Filter>Renderer\Helper\Axis</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadGrid.h">
+      <Filter>Renderer\Helper\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadLight.h">
+      <Filter>Renderer\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadLightManager.h">
+      <Filter>Renderer\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadMeshCreater.h">
+      <Filter>Renderer\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadBatchRenderManager.h">
+      <Filter>Renderer\Renderer\BatchRender</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadDebugRenderManager.h">
+      <Filter>Renderer\Renderer\DebugRender</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderer.h">
+      <Filter>Renderer\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderOutputInfo.h">
+      <Filter>Renderer\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderPrimitive.h">
+      <Filter>Renderer\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationAction.h">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationActionEnum.h">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationAttack.h">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationDead.h">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationIdle.h">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationRun.h">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationWalk.h">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTreeChildNode.h">
+      <Filter>Renderer\Scene\Animation\BlendTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTreeInterResultNode.h">
+      <Filter>Renderer\Scene\Animation\BlendTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTreeLastResultNode.h">
+      <Filter>Renderer\Scene\Animation\BlendTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTreeNode.h">
+      <Filter>Renderer\Scene\Animation\BlendTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTreePose.h">
+      <Filter>Renderer\Scene\Animation\BlendTree\Pose</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendResult.h">
+      <Filter>Renderer\Scene\Animation\BlendTree\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTree.h">
+      <Filter>Renderer\Scene\Animation\BlendTree\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendType.h">
+      <Filter>Renderer\Scene\Animation\BlendTree\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationBlendTypeNormal.h">
+      <Filter>Renderer\Scene\Animation\BlendTree\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationControlBox.h">
+      <Filter>Renderer\Scene\Animation\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationController.h">
+      <Filter>Renderer\Scene\Animation\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationEvent.h">
+      <Filter>Renderer\Scene\Animation\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationEventManager.h">
+      <Filter>Renderer\Scene\Animation\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimation.h">
+      <Filter>Renderer\Scene\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationJoint.h">
+      <Filter>Renderer\Scene\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationManager.h">
+      <Filter>Renderer\Scene\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationMotion.h">
+      <Filter>Renderer\Scene\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationMotionSet.h">
+      <Filter>Renderer\Scene\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadFVFInfo.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadIBInfo.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadIBManager.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadVBInfo.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadVBManager.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadOctree.h">
+      <Filter>Renderer\Scene\Octree</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadOctreeNode.h">
+      <Filter>Renderer\Scene\Octree</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadOctreeWorld.h">
+      <Filter>Renderer\Scene\Octree</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPick.h">
+      <Filter>Renderer\Scene\Pick</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostProcessManager.h">
+      <Filter>Renderer\Scene\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectToneMap.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectBase.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectBloomH.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectBloomV.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectBrightPass.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectDOF.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectEdgeDetect.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectGBlurH.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectGBlurV.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectInverse.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectLightScattering.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectMonoChrome.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectNormalEdgeDetect.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectNoShader.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectScaleHalf.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectScaleOri.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectScaleQuart.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectSepia.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectSSAO.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAlphaAccumulate.h">
+      <Filter>Renderer\Scene\RenderData\Accumulate</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadNoAlphaShaderAccumulate.h">
+      <Filter>Renderer\Scene\RenderData\Accumulate</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderDataCollector.h">
+      <Filter>Renderer\Scene\RenderData\Collector</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderDataCollectorMtl.h">
+      <Filter>Renderer\Scene\RenderData\Collector</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderDataCollectorShader.h">
+      <Filter>Renderer\Scene\RenderData\Collector</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadCacheMesh.h">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadMaterial.h">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadMesh.h">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderCacheData.h">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderData.h">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderDataManager.h">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadSceneManager.h">
+      <Filter>Renderer\Scene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadShader.h">
+      <Filter>Renderer\Scene\Shader\NormalShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadShaderList.h">
+      <Filter>Renderer\Scene\Shader\NormalShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectShaderList.h">
+      <Filter>Renderer\Scene\Shader\PostEffectShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadCloudUberShader.h">
+      <Filter>Renderer\Scene\Shader\UberShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadUberShader.h">
+      <Filter>Renderer\Scene\Shader\UberShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadUberShaderFragment.h">
+      <Filter>Renderer\Scene\Shader\UberShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadUberShaderManager.h">
+      <Filter>Renderer\Scene\Shader\UberShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadWaterUberShader.h">
+      <Filter>Renderer\Scene\Shader\UberShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadTerrain.h">
+      <Filter>Renderer\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\Bread2DTexture.h">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadCubeTexture.h">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderToTexture.h">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadTexture.h">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadTextureLoader.h">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadTextureManager.h">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadVolumeTexture.h">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadSerialize3D.h">
+      <Filter>Renderer\Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadSerializeBfx.h">
+      <Filter>Renderer\Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadSerializeBmd.h">
+      <Filter>Renderer\Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadSerializeBsd.h">
+      <Filter>Renderer\Serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadProjectedShadow.h">
+      <Filter>Renderer\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadShadowBase.h">
+      <Filter>Renderer\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadShadowCSM.h">
+      <Filter>Renderer\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadShadowManager.h">
+      <Filter>Renderer\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadShadowMap.h">
+      <Filter>Renderer\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadShadowPSSM.h">
+      <Filter>Renderer\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadShadowVolume.h">
+      <Filter>Renderer\Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadFileSystem.h">
+      <Filter>Core\FileSystems\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadAnimationActionManager.h">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadClientDefinition.h">
+      <Filter>Core\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Include\BreadClientSystemInfo.h">
+      <Filter>Core\SystemInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityProperty.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Include\BreadMoveProxyManager.h">
+      <Filter>Game\MoveProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadTerrainCell.h">
+      <Filter>Renderer\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadNavigationPath.h">
+      <Filter>Renderer\Scene\Terrain\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadNavigationHeap.h">
+      <Filter>Renderer\Scene\Terrain\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadNavigationNode.h">
+      <Filter>Renderer\Scene\Terrain\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadNavigation.h">
+      <Filter>Renderer\Scene\Terrain\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadTerrainMeshCell.h">
+      <Filter>Renderer\Scene\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadD3DCheckDevice.h">
+      <Filter>Renderer\D3D\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadD3DDeclaration.h">
+      <Filter>Renderer\D3D\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadD3DHeader.h">
+      <Filter>Renderer\D3D\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadD3DSystem.h">
+      <Filter>Renderer\D3D\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadRenderPropertyManager.h">
+      <Filter>Renderer\D3D\D3D9</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadD3D11System.h">
+      <Filter>Renderer\D3D\D3D11</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadD3DSystemClassify.h">
+      <Filter>Renderer\D3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadDecalAccumulate.h">
+      <Filter>Renderer\Scene\RenderData\Accumulate</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadEntityDecal.h">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadPostEffectDecal.h">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadShaderEffect.h">
+      <Filter>Renderer\Scene\Shader\NormalShader</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadIBInfo9.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadIIBInfo11.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadVBInfo9.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadVBInfo11.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadIndexBuffer.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadVertexBuffer.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadIndexBuffer9.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer\Include\BreadVertexBuffer9.h">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Source\BreadFps.cpp">
+      <Filter>Core\Fps</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadApplication.cpp">
+      <Filter>Core\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadScreenShot.cpp">
+      <Filter>Core\Core\ScreenShot</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadClassCreater.cpp">
+      <Filter>Core\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadCore.cpp">
+      <Filter>Core\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadEngineConfig.cpp">
+      <Filter>Core\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadExceptionHandler.cpp">
+      <Filter>Core\Debug\Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadDebug.cpp">
+      <Filter>Core\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadMsgCallBack.cpp">
+      <Filter>Core\Patterns\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadMsgManager.cpp">
+      <Filter>Core\Patterns\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadCoreScript.cpp">
+      <Filter>Core\Script\Lua\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadRegisterLuaFunc_CoreScript.cpp">
+      <Filter>Core\Script\Lua\Script</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadLuaManager.cpp">
+      <Filter>Core\Script\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadFileWatcher.cpp">
+      <Filter>Core\FileSystems\FileSystem\FileWatcher</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadSerializeBase.cpp">
+      <Filter>Core\FileSystems\FileSystem\Serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Source\BreadMoveProxy.cpp">
+      <Filter>Game\MoveProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadConsole.cpp">
+      <Filter>GUI\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadD3DFont.cpp">
+      <Filter>GUI\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadFontManager.cpp">
+      <Filter>GUI\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadFreeType.cpp">
+      <Filter>GUI\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadFreeTypeFont.cpp">
+      <Filter>GUI\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadFreeTypeFontCash.cpp">
+      <Filter>GUI\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadFreeTypeGlyph.cpp">
+      <Filter>GUI\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadFreeTypeGlyphCash.cpp">
+      <Filter>GUI\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadFreeTypeLine.cpp">
+      <Filter>GUI\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadUIFreeTypeText.cpp">
+      <Filter>GUI\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadImm.cpp">
+      <Filter>GUI\Ime</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadInputSystem.cpp">
+      <Filter>GUI\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadInputLocaleInfo.cpp">
+      <Filter>GUI\LocaleInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadGui.cpp">
+      <Filter>GUI\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadUiPrimitive.cpp">
+      <Filter>GUI\RenderData</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadWindowRenderData.cpp">
+      <Filter>GUI\RenderData</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadBackground.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadButton.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadCheckBox.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadComboBox.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadEditBox.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadForm.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadListBox.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadRadioButton.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadScrollBar.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadSlider.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadStaticText.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadWindow.cpp">
+      <Filter>GUI\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI\Source\BreadWindowXmlSerialize.cpp">
+      <Filter>GUI\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadModelCache.cpp">
+      <Filter>Renderer\Cache\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadTextureCache.cpp">
+      <Filter>Renderer\Cache\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadFrustum.cpp">
+      <Filter>Renderer\Camera\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadFrustumPlane.cpp">
+      <Filter>Renderer\Camera\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadFrustumRadar.cpp">
+      <Filter>Renderer\Camera\Frustum</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadCamera.cpp">
+      <Filter>Renderer\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadCameraManager.cpp">
+      <Filter>Renderer\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadD3DUtil.cpp">
+      <Filter>Renderer\D3D\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntity.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityActor.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityAvatar.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityMesh.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityMob.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityModel.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityNpc.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityPlane.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityPlayer.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityProp.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityFadeManager.cpp">
+      <Filter>Renderer\Entity\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityManager.cpp">
+      <Filter>Renderer\Entity\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadCloud.cpp">
+      <Filter>Renderer\Environment\Cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadVolumeCloud.cpp">
+      <Filter>Renderer\Environment\Cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadFog.cpp">
+      <Filter>Renderer\Environment\Fog</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadSkyBox.cpp">
+      <Filter>Renderer\Environment\SkyBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadWeather.cpp">
+      <Filter>Renderer\Environment\Weather</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEnvironment.cpp">
+      <Filter>Renderer\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAxis.cpp">
+      <Filter>Renderer\Helper\Axis</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadGrid.cpp">
+      <Filter>Renderer\Helper\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadLight.cpp">
+      <Filter>Renderer\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadLightManager.cpp">
+      <Filter>Renderer\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadMeshCreater.cpp">
+      <Filter>Renderer\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadBatchRenderManager.cpp">
+      <Filter>Renderer\Renderer\BatchRender</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadDebugRenderManager.cpp">
+      <Filter>Renderer\Renderer\DebugRender</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadRenderer.cpp">
+      <Filter>Renderer\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadRenderOutputInfo.cpp">
+      <Filter>Renderer\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadRenderPrimitive.cpp">
+      <Filter>Renderer\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationAction.cpp">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationAttack.cpp">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationDead.cpp">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationIdle.cpp">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationRun.cpp">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationWalk.cpp">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTreeChildNode.cpp">
+      <Filter>Renderer\Scene\Animation\BlendTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTreeInterResultNode.cpp">
+      <Filter>Renderer\Scene\Animation\BlendTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTreeLastResultNode.cpp">
+      <Filter>Renderer\Scene\Animation\BlendTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTreeNode.cpp">
+      <Filter>Renderer\Scene\Animation\BlendTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTreePose.cpp">
+      <Filter>Renderer\Scene\Animation\BlendTree\Pose</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendResult.cpp">
+      <Filter>Renderer\Scene\Animation\BlendTree\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTree.cpp">
+      <Filter>Renderer\Scene\Animation\BlendTree\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendType.cpp">
+      <Filter>Renderer\Scene\Animation\BlendTree\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationBlendTypeNormal.cpp">
+      <Filter>Renderer\Scene\Animation\BlendTree\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationControlBox.cpp">
+      <Filter>Renderer\Scene\Animation\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationController.cpp">
+      <Filter>Renderer\Scene\Animation\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationEvent.cpp">
+      <Filter>Renderer\Scene\Animation\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationEventManager.cpp">
+      <Filter>Renderer\Scene\Animation\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimation.cpp">
+      <Filter>Renderer\Scene\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationJoint.cpp">
+      <Filter>Renderer\Scene\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationManager.cpp">
+      <Filter>Renderer\Scene\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationMotion.cpp">
+      <Filter>Renderer\Scene\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationMotionSet.cpp">
+      <Filter>Renderer\Scene\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadIBInfo.cpp">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadIBManager.cpp">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadVBInfo.cpp">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadVBManager.cpp">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadOctree.cpp">
+      <Filter>Renderer\Scene\Octree</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadOctreeNode.cpp">
+      <Filter>Renderer\Scene\Octree</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadOctreeWorld.cpp">
+      <Filter>Renderer\Scene\Octree</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPick.cpp">
+      <Filter>Renderer\Scene\Pick</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostProcessManager.cpp">
+      <Filter>Renderer\Scene\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectBase.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectBloomH.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectBloomV.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectBrightPass.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectDOF.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectEdgeDetect.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectGBlurH.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectGBlurV.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectInverse.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectLightScattering.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectMonoChrome.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectNormalEdgeDetect.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectScaleHalf.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectScaleOri.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectScaleQuart.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectSepia.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectSSAO.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectToneMap.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAlphaAccumulate.cpp">
+      <Filter>Renderer\Scene\RenderData\Accumulate</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadNoAlphaShaderAccumulate.cpp">
+      <Filter>Renderer\Scene\RenderData\Accumulate</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadRenderDataCollector.cpp">
+      <Filter>Renderer\Scene\RenderData\Collector</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadRenderDataCollectorMtl.cpp">
+      <Filter>Renderer\Scene\RenderData\Collector</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadRenderDataCollectorShader.cpp">
+      <Filter>Renderer\Scene\RenderData\Collector</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadCacheMesh.cpp">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadMaterial.cpp">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadMesh.cpp">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadRenderCacheData.cpp">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadRenderData.cpp">
+      <Filter>Renderer\Scene\RenderData</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadSceneManager.cpp">
+      <Filter>Renderer\Scene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadShader.cpp">
+      <Filter>Renderer\Scene\Shader\NormalShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadShaderList.cpp">
+      <Filter>Renderer\Scene\Shader\NormalShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectShaderList.cpp">
+      <Filter>Renderer\Scene\Shader\PostEffectShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadCloudUberShader.cpp">
+      <Filter>Renderer\Scene\Shader\UberShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadUberShader.cpp">
+      <Filter>Renderer\Scene\Shader\UberShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadUberShaderFragment.cpp">
+      <Filter>Renderer\Scene\Shader\UberShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadUberShaderManager.cpp">
+      <Filter>Renderer\Scene\Shader\UberShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadWaterUberShader.cpp">
+      <Filter>Renderer\Scene\Shader\UberShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadTerrain.cpp">
+      <Filter>Renderer\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\Bread2DTexture.cpp">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadCubeTexture.cpp">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadTexture.cpp">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadTextureLoader.cpp">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadTextureManager.cpp">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadVolumeTexture.cpp">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadSerialize3D.cpp">
+      <Filter>Renderer\Serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadSerializeBfx.cpp">
+      <Filter>Renderer\Serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadSerializeBmd.cpp">
+      <Filter>Renderer\Serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadSerializeBsd.cpp">
+      <Filter>Renderer\Serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadProjectedShadow.cpp">
+      <Filter>Renderer\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadShadowCSM.cpp">
+      <Filter>Renderer\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadShadowManager.cpp">
+      <Filter>Renderer\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadShadowMap.cpp">
+      <Filter>Renderer\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadShadowPSSM.cpp">
+      <Filter>Renderer\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadShadowVolume.cpp">
+      <Filter>Renderer\Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadRenderToTexture.cpp">
+      <Filter>Renderer\Scene\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadFileSystem.cpp">
+      <Filter>Core\FileSystems\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadAnimationActionManager.cpp">
+      <Filter>Renderer\Scene\Animation\ASM\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Source\BreadClientSystemInfo.cpp">
+      <Filter>Core\SystemInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityProperty.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Source\BreadMoveProxyManager.cpp">
+      <Filter>Game\MoveProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadTerrainCell.cpp">
+      <Filter>Renderer\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadNavigationPath.cpp">
+      <Filter>Renderer\Scene\Terrain\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadNavigationHeap.cpp">
+      <Filter>Renderer\Scene\Terrain\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadNavigationNode.cpp">
+      <Filter>Renderer\Scene\Terrain\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadNavigation.cpp">
+      <Filter>Renderer\Scene\Terrain\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadTerrainMeshCell.cpp">
+      <Filter>Renderer\Scene\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadD3DCheckDevice.cpp">
+      <Filter>Renderer\D3D\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadD3DSystem.cpp">
+      <Filter>Renderer\D3D\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadRenderPropertyManager.cpp">
+      <Filter>Renderer\D3D\D3D9</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadD3D11System.cpp">
+      <Filter>Renderer\D3D\D3D11</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadDecalAccumulate.cpp">
+      <Filter>Renderer\Scene\RenderData\Accumulate</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadEntityDecal.cpp">
+      <Filter>Renderer\Entity\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadPostEffectDecal.cpp">
+      <Filter>Renderer\Scene\PostProcess\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadShaderEffect.cpp">
+      <Filter>Renderer\Scene\Shader\NormalShader</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadIBInfo9.cpp">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadIIBInfo11.cpp">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadVBInfo11.cpp">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadVBInfo9.cpp">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadIndexBuffer9.cpp">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer\Source\BreadVertexBuffer9.cpp">
+      <Filter>Renderer\Scene\Buffer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+1. cAnimationAction를 상속받은, 추가할려는 액션 생성
+2. CustomAnimationActionEnum.h에 enum추가
+3. cCustomAnimationActionManager::createAction에 추가한 타입 create 부분 추가
+4. cCustomLuaManager::registerPredefineMembers()에 추가한 타입 등록
+5. Resource\script\initAnimation.lua에 타입 추가
